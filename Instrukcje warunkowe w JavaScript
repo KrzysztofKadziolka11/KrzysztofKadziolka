@@ -1,0 +1,67 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        const liczba = prompt('Podaj liczbę: ');
+
+        if (liczba % 2 == 0) {
+            document.write('Podana liczba jest parzysta');  
+        }
+        else {
+            document.write('Podana liczba jest nieparzysta');
+        }
+
+    </script>
+</body>
+</html>
+ 
+
+-->
+
+<!--POD EGZAMIN-->
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+</head>
+<body>
+    <input type="number" name="liczba">
+    <button>Sprawdz</button>
+    <div class="wynik"></div>
+    <script>
+    //pobieramy/odwołując się do poszczególnego elementu html, 
+    //obecnie pobieramy button oraz div
+    //btn - nazwa zmiennej
+    
+    //POBIERANIE 
+    //const btn = document.querySelector('button -nazwa znacznika html')
+    
+    //const divW = DOCUMENT.querySelector('div.wynik - 
+    //nazwa znacznika html + nazwa klasy')
+    
+    const btn = document.querySelector('button');
+    const divW = document.querySelector('div.wynik')
+    
+    //do przycisku (btn) przypisujemy zdarzenie klikania myszką na przycisk  
+    //a - nazwa zdarzenia ('click')
+    // b- funkcja która się wykona (function () {} ); 
+    btn.addEventListener('click' , function () {
+    //poniższy kod wykona sie w momencie kliknięcia w przycisk 
+    //pobieramy wartość pola input o nazwie liczba 
+    //const lczb = document.querySelector('input[name="liczba"]' - "''" '""')
+    const lczb = document.querySelector('input[name="liczba"]').value;
+   
+    if (lczb % 2 == 0 ){
+    //do naszego diva o klasie (zmienna divW) "wrzucamy" treść\
+    divW.textContent = 'Podana liczba jest parzysta';
+    } else{
+    divW.textContent = 'Podana liczba jest nieparzysta'; 
+    }
+    });
+    </script>
+     
+</body>
+</html>
