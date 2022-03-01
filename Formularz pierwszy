@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Formularz	</title>
+	<meta name="description" content="Formularze"/>
+	<meta http-equiv="Content-Language" content="pl"/>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Formularz</legend>
+
+            <div>
+                <label form="imie">Imię</label>
+                <input type="text" id="imie">
+            </div>
+
+            <div>
+                <label form="nazwisko">Nazwisko</label>
+                <input type="text" id="nazwisko">
+            </div>
+
+            <div>
+            <label> Pesel</label>
+            <input name="pesel"  type=”number”>
+            </div>
+
+            <div>
+                <label>
+                    Kod pocztowy
+                    <input type="text" maxlength="2"></label>
+                    - 
+                    <input type="text" maxlength="3"></label>
+                </label>
+            </div>
+
+            <div>
+                <label form="telefon">Telefon</label>
+                <input type="tel" name="telefon" placeholder="601-300-293" pattern="[0-9]{3}-[0-9]{3}">
+            </div>
+
+            <div>
+                <label>
+                    PESEL
+                    <input type="text" maxlength="11" />
+                </label>
+            </div>
+            
+            <div>
+                <label>
+                    Wybierz płeć
+               <select>
+                   <option value="Kobieta">Kobieta</option>
+                   <option value="Mężczyzna">Mążczyzna</option>
+               </select>
+                </label> 
+            </div>
+
+            
+            <div>
+                <label>
+                    Wybierz województwo
+               <select>
+                   <option value="woj.zachodnio-pomorskie">woj.zachodnio-pomorskie</option>
+                   <option value="woj.pomorskie">woj.pomorskie</option>
+                   <option value="woj.warmińsko-mazurskie">woj.warmińsko-mazurskie</option>
+                   <option value="woj.podlaskie">woj.podlaskie</option>
+                   <option value="woj.mazowieckie">woj.mazowieckie</option>
+                   <option value="woj.kujawsko-pomorskie">woj.kujawsko-pomorskie</option>
+                   <option value="woj.wielkopolskie">woj.wielkopolskie</option>
+                   <option value="woj.lubuskie">woj.lubuskie</option>
+                   <option value="woj.dolnośląskie">woj.dolnośląskie</option>
+                   <option value="woj.łódzkie">woj.łódzkie</option>
+                   <option value="woj.opolskie">woj.opolskie</option>
+                   <option value="woj.śląskie">woj.śląskie</option>
+                   <option value="woj.świętokrzyskie">woj.świętokrzyskie</option>
+                   <option value="woj.lubelskie">woj.lubelskie</option>
+                   <option value="woj.małopolskie">woj.małopolskie</option>
+                   <option value="woj.podkarpackie">woj.podkarpackie</option>
+               </select>
+                </label> 
+            </div>
+        </fieldset>
+
+        <div>
+            <label>
+                Zainteresowania:
+                <div><input type="checkbox" name="zainteresowania"/>Piłka nożna</div>
+                <div><input type="checkbox" name="zainteresowania"/>Piłka ręczna</div>
+                <div><input type="checkbox" name="zainteresowania"/>Piłka koszykowa</div>
+                <div><input type="checkbox" name="zainteresowania"/>Piłka siatkowa</div>
+                <div><input type="checkbox" name="zainteresowania"/>Golf</div>
+                <div><input type="checkbox" name="zainteresowania"/>Skoki narciarskie</div>
+                <div><input type="checkbox" name="zainteresowania"/>Biegi narciarskie</div>
+                <div><input type="checkbox" name="zainteresowania"/>Karty</div>
+            </label>
+        </div>
+
+        <div>
+            <form action="">
+            Przyciski:
+            <div>
+                <input type="text" valur="#">
+                <input type="button" value="Wyczyść">
+                <input type="button" value="Wyślij">
+            </div>
+            </form>
+        </div>
+        
+</body>
+</html>
