@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Formularz	</title>
+	<meta name="description" content="Formularze"/>
+	<meta http-equiv="Content-Language" content="pl"/>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Dane Członka OFE</legend>
+
+            <div>
+                <label form="nazwisko">Nazwisko</label>
+                <input type="text" id="nazwisko">
+            </div>
+
+            <div>
+                <label form="Imiona">Imiona</label>
+                <input type="text" id="imiona">
+                <input type="text" id="imiona">
+                <input type="text" id="imiona">
+            </div>
+
+            <div>
+                <label form="Data urodzenia">Data urodz.</label>
+                <input type="text" id="durodz">
+                /
+                <input type="text" id="durodz">
+                /
+                <input type="text" id="durodz">
+
+                <label>
+                     Płeć
+               <select>
+                   <option value="Kobieta">Kobieta</option>
+                   <option value="Mężczyzna">Mążczyzna</option>
+               </select>
+                </label> 
+            </div>
+
+            <div>
+                <label>
+                    PESEL
+                    <input type="text" maxlength="11" />
+                </label>
+
+                <label>
+                    NIP
+                    <input type="text" id="NIP">
+                    -
+                    <input type="text" id="NIP">
+                    -
+                    <input type="text" id="NIP">
+                    -
+                    <input type="text" id="NIP">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Dokument
+                    <select>
+                        <option value="dowód osobisty">Dowód osobisty</option>
+                        <option value="dowód osobisty">Dowód osobisty</option>
+                        <option value="dowód osobisty">Dowód osobisty</option>
+                    </select>
+                </label>
+
+                <label>
+                    Seria i nr <dok">
+                    <input type="text" id="seria"/>
+                </label>
+            </div>
+
+            *wymagane wypełnienie co najmniej 1 z 2 pól "PESEL", "Seia i nr dok."
+
+            <div>
+                <label>
+                    Stan cywilny
+                    <select>
+                        <option value=".....">....</option>
+                        <option value=".....">....</option>
+                        <option value=".....">....</option>
+                    </select>
+                </label>
+
+                <label>
+                    Kraj obywatelstwa
+                    <select>
+                        <option value="Polska">Polska</option>
+                        <option value="Ukraina">Ukraina</option>
+                        <option value="Rosja">Rosja</option>
+                    </select>
+                </label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+             <legend>Adres stałego zamieszkania</legend>
+    
+            <div>
+                <label>
+                    Ulica
+                <input type="text" id="Ulica">  
+                </label>
+
+                <label>
+                    Nr domu
+                <input type="text" id="nrdomu">  
+                </label>
+
+                <label>
+                    Nr mieszkania 
+                <input type="text" id="nrmieszkania">  
+                </label>            
+            </div>
+
+            <div>
+                <label>
+                    Miejscowość
+                <input type="text" id="Miejscowość">  
+                </label>
+
+                <label>
+                    Kod pocztowy
+                    <input type="text" maxlength="2"></label>
+                    - 
+                    <input type="text" maxlength="3"></label>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Gmina
+                <input type="text" id="Gmina">  
+                </label>
+
+                <label>
+                    Kraj 
+                     <select>
+                         <option value="Polska">Polska</option>
+                         <option value="Ukraina">Ukraina</option>
+                         <option value="Rosja">Rosja</option>
+                    </select>
+                </label>            
+            </div>
+
+        </fieldset>    
+    
+    </form>
+        
+</body>
+</html>
