@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header class="first">
+        <div>
+        <h1>site title</h1>
+        </div>
+        <nav>
+        <ul class="list_ul">
+            <li class="pkt"><a href="#" target="_blank">start</a></li>
+            <li class="pkt"><a href="#" target="_blank">o mnie</a></li>
+            <li class="pkt"><a href="#" target="_blank">mój warsztat</a></li>
+            <li class="pkt"><a href="#" target="_blank">galeria</a></li>
+            <li class="pkt"><a href="#" target="_blank">kontakt</a></li>
+        </ul>
+        </nav>
+        
+        <main>
+        <h1 class="text">witamy</h1>
+        <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ad? Sapiente sit repellat accusantium perferendis a non omnis sed iure, explicabo repudiandae atque dignissimos impedit dicta odit officiis velit reiciendis.</p>
+        <img src="zdj.jpg" alt="photo"/>
+        </main>
+
+        <section>
+           <h6 class="text">info I</h6> 
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur officiis, temporibus tenetur dicta, quae recusandae velit sed, culpa expedita tempora quis quas dolores eum facilis fugiat modi at nemo inventore.</p>
+            <button class="przycisk" name="wiecej"></button>
+        </section>
+        <section>
+            <h6 class="text">info I</h6> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur officiis, temporibus tenetur dicta, quae recusandae velit sed, culpa expedita tempora quis quas dolores eum facilis fugiat modi at nemo inventore.</p>
+             <button class="przycisk" name="wiecej"></button>
+         </section>
+         <section>
+            <h6 class="text">info I</h6> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur officiis, temporibus tenetur dicta, quae recusandae velit sed, culpa expedita tempora quis quas dolores eum facilis fugiat modi at nemo inventore.</p>
+             <button class="przycisk" name="wiecej"></button>
+         </section>
+
+         footer>
+         Author: <address>Krzysztof Kądziołka (Krzysztof.Kadziolka@example.com)</address>
+         <p>Wszystkie prawa zastrzeżone &#169;</p>
+        </footer>
+    </header>
+
+
+</body>
+
+</html>
