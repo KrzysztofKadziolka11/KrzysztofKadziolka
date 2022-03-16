@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Liczba parzysta/nieparzysta</h2>
+    <input type="number" name="liczba">
+    <button>Przycisk</button>
+    <div class="wynik"></div>
+
+    <script>
+
+        const btn = document.querySelector('button');
+        const divW = document.querySelector('div.wynik')
+
+        btn.addEventListener('click', function (){
+            const lczb = document.querySelector('input[name="liczba"]').value;
+
+            if (lczb % 2 == 0){
+                divW.textContent = 'Podana liczba jest parzysta';
+            }
+            else {
+                divW.textContent = 'Podana liczba jest nieparzysta';
+            }
+        });
+    </script>
+</body>
+</html>
