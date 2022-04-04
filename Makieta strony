@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makieta naszej strony internetowej</title>
+</head>
+
+<body>
+    
+    <header class="first">
+        <div>
+        <h1>site title</h1>
+        </div>
+        <div>
+            <a href="link"><img src="logo.jpg" alt="Logo firmy"></a>
+        </div>
+        
+        <nav>
+        <ul class="list_ul">
+            <li class="pkt"><a href="#" target="_blank">start</a></li>
+            <li class="pkt"><a href="#" target="_blank">o firmie</a></li>
+            <li class="pkt"><a href="#" target="_blank">galeria</a></li>
+            <li class="pkt"><a href="#" target="_blank">kontakt</a></li>
+        </ul>
+        </nav>
+        
+        <main>
+            <h1 class="text">witamy na naszej stronie</h1>
+            <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ad? Sapiente sit repellat accusantium perferendis a non omnis sed iure, explicabo repudiandae atque dignissimos impedit dicta odit officiis velit reiciendis.</p>
+                <section>
+                    <input type="search" role="search">
+                    <input type="submit">
+                </section>
+        </main>
+
+        <section>
+           <h6 class="text">info I</h6> 
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur officiis, temporibus tenetur dicta, quae recusandae velit sed, culpa expedita tempora quis quas dolores eum facilis fugiat modi at nemo inventore.</p>
+           <div>
+                <input class="przycisk" type="search">
+                <input type="submit">
+           </div>
+        </section>
+
+        <section>
+            <h6 class="text">info II</h6> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur officiis, temporibus tenetur dicta, quae recusandae velit sed, culpa expedita tempora quis quas dolores eum facilis fugiat modi at nemo inventore.</p>
+             
+            <div>
+                <input class="przycisk" type="search">
+                <input type="submit">
+            </div>
+         </section>
+
+         <aside>
+             <img src="#" alt="Full Banner Ad" sizes="468x60" srcset="#">
+         </aside>
+
+        <section>
+            <h2>Skontaktuj się z nami</h2>
+        <form action="">
+            <div>
+                <label form="imie">Wpisz imię</label>
+                <input type="text" id="imie">
+            </div>
+            <div>
+                <label form="imie">Wpisz nazwisko</label>
+                <input type="text" id="nazwisko">
+            </div>
+            <div>
+                <label form="telefon">Wpisz numer telefonu</label>
+                <input type="tel" name="telefon" placeholder="601-300-293" pattern="[0-9]{3}-[0-9]{3}">
+            </div>
+            <div>
+                <label form="imie">Wpisz wiadomość</label>
+                <input type="text" id="text">
+            </div>
+        </form>
+        </section>
+
+        <section>
+          <h2>Przydatne linki</h2>
+            <ul class="lista_ul">
+                 <li class="pkt"><a href="#" target="_blank">WWW</a></li>
+                <ul>
+                    <li class="pkt"><a href="#" target="_blank">Link1</a></li>
+                    <li class="pkt"><a href="#" target="_blank">Link2</a></li>
+                </ul>
+                 <li class="pkt"><a href="#" target="_blank">Design</a></li>
+                <ul>
+                    <li class="pkt"><a href="#" target="_blank">Link 1</a></li>
+                    <li class="pkt"><a href="#" target="_blank">Link 2</a></li>
+                    <li class="pkt"><a href="#" target="_blank">Link 3</a></li>
+                </ul>
+            </ul>
+        </section>
+
+         <footer>
+        <address>Dane adresowe firmy </address>
+        </footer>
+    </header>
