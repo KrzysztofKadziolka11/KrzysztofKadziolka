@@ -1,0 +1,24 @@
+
+<!--Napisz program sprawdzający czy podana liczba spełnia warunek: jest większa od 5, ale różna od 6 i różna od 12 lub też jest równa 0.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+
+        const liczba=prompt("Podaj liczbe:");
+        if(liczba>5 && liczba!=6 && liczba!=12 || liczba==0){
+            document.write("Liczba spełnia warunek");
+        }
+        else{
+            document.write("Liczba niespełnia warunku");
+        }
+    </script>
+</body>
+</html>
