@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+            const liczba = prompt("Podaj liczbe a: ");
+            const liczba1 = prompt("Podaj liczbe b: ");
+            const liczba2 = prompt("Podaj liczbe c: ");
+
+            if(liczba>liczba1 || liczba>liczba2){
+                document.write("Liczba pierwsza jest największa")
+            }
+            else if( liczba1>liczba || liczba1>liczba2){
+                document.write("Liczba druga jest największa")
+            }
+            else if( liczba2>liczba || liczba2>liczba1){
+                document.write("Liczba trzecia jest największa")
+            }
+            else{
+                document.write("Żadna z liczb nie jest największa")
+            }
+        </script>
+
+</body>
+</html>
