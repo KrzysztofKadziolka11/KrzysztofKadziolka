@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      body{
+
+        margin: 150px;
+      }
+      .container{
+      display: flex;
+      height: 300px;
+      background-color: red;
+      align-items:center; 
+      margin: 10px;                                  
+      }                                                                       
+      .container div {                                                
+      background-color: #f1f1f1;  
+      width: 100px;                           
+      margin: 10px;                                                  
+      text-align: center;
+      line-height: 75px;                                                 
+      font-size: 30px;
+      }
+
+      .containers{
+      display: flex;
+      height: 300px;
+      background-color: red;
+      align-items:flex-start; 
+      margin: 10px;                                  
+      }                                                                       
+      .containers div {                                                
+      background-color: #f1f1f1;  
+      width: 100px;                           
+      margin: 10px;                                                  
+      text-align: center;
+      line-height: 75px;                                                 
+      font-size: 30px;
+      }
+
+      .containerss{
+      display: flex;
+      height: 300px;
+      background-color: red;
+      align-items:flex-end;   
+      margin: 10px;                                
+      }                                                                       
+      .containerss div {                                                
+      background-color: #f1f1f1;  
+      width: 100px;                           
+      margin: 10px;                                                  
+      text-align: center;
+      line-height: 75px;                                                 
+      font-size: 30px;
+      }
+
+      .containersss{
+      display: flex;
+      height: 300px;
+      background-color: red;
+      align-items:baseline;
+      margin: 10px;                                   
+      }                                                                       
+      .containersss div {                                                
+      background-color: #f1f1f1;  
+      width: 100px;                           
+      margin: 10px;                                                  
+      text-align: center;
+      line-height: 75px;                                                 
+      font-size: 30px;
+      }
+
+      .containerssss{
+      display: flex;
+      height: 300px;
+      background-color: red;
+      align-items:stretch; 
+      margin: 10px;                                  
+      }                                                                       
+      .containerssss div {                                                
+      background-color: #f1f1f1;  
+      width: 100px;                           
+      margin: 10px;                                                  
+      text-align: center;
+      line-height: 75px;                                                 
+      font-size: 30px;
+      }
+   </style>
+</head>
+
+<body>
+  <div> 
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </div>
+
+  <div> 
+    <div class="containers">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <div class="containers">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </div>
+
+  <div> 
+    <div class="containerss">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <div class="containerss">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </div>
+
+  <div> 
+    <div class="containersss">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <div class="containersss">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </div>
+
+  <div> 
+    <div class="containerssss">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <div class="containerssss">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </div>
+
+</body>
+</html>
