@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <input type="text" name="imie" placeholder="Wpisz imie"/>
+    <button>Sprawdz</button>
+    <div></div>
+
+    <script>
+        //pobieranie elementów html
+        const input = document.querySelector('input[name="imie"]');
+        const btn = document.querySelector('button');
+        const div = document.querySelector('div');
+
+        //utworz funkcje, która sprawdzi imie
+        const sprawdzimie = function () {
+        const imie = input.value; //pobieram wartosc pola input
+        const ileZnakow = imie.lenght; //okrsli ile znaków na wyraz
+        
+        if (imie.charAt(ileZnakow - 1) === 'a' || imie.charAt(ileZnakow - 1) === 'A'){
+            div.textContent = 'Podane imię jest żeńskie';
+        }
+        else{
+            div.textContent ='Podane imię jest męskie';
+        }
+        };
+
+        //obsługa zdarzenia click
+        btn.addEventListener('click', sprawdzimie);
+    </script>
+
+</body>
+</html>
