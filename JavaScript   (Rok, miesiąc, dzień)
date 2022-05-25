@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div></div>
+
+    <script>
+        const div = document.querySelector('div');
+
+        //tworzymy obiekt typu DATE
+        const data = new Date();
+        //z obiektu data pobieramy konkretne obiekty
+        const rok = data.getFullYear();
+        const miesiac = data.getMonth() +1;
+        const dzien = data.getDate();
+
+        //wyswietlamy date w konkretnym formacie - sposób 1
+        div.textContent = `${rok} / ${miesiac} / ${dzien}`;
+        
+        <!-- 
+        //wyswietlamy date w konkretnym formacie - sposób 2
+        div.textContent = `${rok }`+ `/${miesiac }` + `/${dzien }`;
+        -->
+
+    </script>
+
+</body>
+</html>
