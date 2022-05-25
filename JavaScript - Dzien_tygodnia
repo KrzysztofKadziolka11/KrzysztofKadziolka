@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Jaki dzisiaj jest dzien? Podaj liczbe i nazwe dnia.</h3>
+    <div></div>
+
+    <script>
+        const div = document.querySelector('div');
+        const data = new Date();
+        const dni_tygodnia = data.getDay();
+        if (dni_tygodnia == 1) document.write("poniedziałek");
+        if (dni_tygodnia == 2) document.write("wtorek");
+        if (dni_tygodnia == 3) document.write("środa");
+        if (dni_tygodnia == 4) document.write("czwartek");
+        if (dni_tygodnia == 5) document.write("piątek");
+        if (dni_tygodnia == 6) document.write("sobota");
+        if (dni_tygodnia == 0) document.write("niedziela");
+
+        div.textContent = `${dni_tygodnia }`;
+    </script>
+
+</body>
+</html>
