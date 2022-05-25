@@ -1,0 +1,65 @@
+
+//Program TYLKO wyświetlający bieżący godzinę
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div></div>
+
+    <script>
+        const div = document.querySelector('div');
+
+        //tworzymy obiekt typu DATE
+        const data = new Date();
+        //z obiektu data pobieramy konkretne obiekty
+        const godzina = data.getHours();
+        const minuta = data.getMinutes();
+        const sekunda = data.getSeconds();
+        //wyswietlamy date w konkretnym formacie
+        div.textContent = `${godzina }: `+ `${minuta }:` + `${sekunda}`;
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+//Program wyświetlający godzinę, a dodatkowo dzięki funkcji umożliwia działanie zekarka
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div></div>
+
+    <script>
+        const div = document.querySelector('div');
+         //setTimeOut (nazwafunkcji, czas) - wywołuje funkcje nazwefunfkcji po danym czasie
+        //setInterval (nazwafunkcji czas) - wywołuje cyklicznie funkcję nazwafunkcji co dany czas
+
+        function zegarek(){
+        const data = new Date();
+        const godzina = data.getHours();
+        const minuta = data.getMinutes();
+        const sekunda = data.getSeconds();
+        div.textContent = `${godzina }: `+ `${minuta }:` + `${sekunda}`;
+        }
+        zegarek();
+        setInterval(zegarek, 1000);
+    </script>
+</body>
+</html>
