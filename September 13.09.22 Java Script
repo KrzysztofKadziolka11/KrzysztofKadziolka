@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <style>
+        .zmiana {
+            background-color: black;
+            color:aliceblue;
+
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Przykład z modelu DOM</h1>
+    <div class="sekcja">
+        <h2 id="tytul">Tytul akapitu</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut ipsum accusantium laudantium non,
+        recusandae reprehenderit ea quis architecto cumque repudiandae, harum obcaecati ducimus quos quod necessitatibus maxime excepturi sed?\</p>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut ipsum accusantium laudantium non,
+            recusandae reprehenderit ea quis architecto cumque repudiandae, harum obcaecati ducimus quos quod necessitatibus maxime excepturi sed?\</p>    
+    </div>
+
+
+
+    <script>
+        const naglowekGlowny = document.querySelector('h1'); //pobieranie h1 z strony 
+        const elementDiv = document.querySelector ('sekcja'); //pobieranie diva sekcja
+        const naglowekpoboczny = document.querySelector ('#tytul'); //pobieranie naglowka h2
+        //const naglowekpoboczny = getElementById('tytul');
+        const akapity = document.querySelectorAll('p'); //pobieranie p 
+
+        //zmiana zawartości akapitu pierwszego 
+        //akapity[0].innerHTML = '<b>Nowa tresc akapitu</b>'; //znaczniki przetwarzane <b></b>
+        //akapity[0].textContent = '<b>Nowa tresc akapitu</b>';  //znaczmiki nie przetwarzane <b></b>
+    
+        akapity[0].textContent = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut ipsum accusantium laudantium no';
+
+        //zmiana obrazka 
+        const obrazek =document.querySelector('img');
+        //podmieniamy zawartość 
+        obrazek.setAttribute('src', 'https://th.bing.com/th/id/OIP.b-ROSIMC8Aj06F_WUayAdQHaHb?w=205&h=206&c=7&r=0&o=5&pid=1.7');
+
+
+        //zmieniamy kolor h1 - style
+        naglowekGlowny.style.color = 'orange';
+        naglowekpoboczny.style.fontFamily = 'Arial';
+
+        //dodajemy klase zmiana do akapitów 
+        //akapity[0].classList.add('zmiana');
+        //akapity[1].classList.add('zmiana');
+    
+
+        akapity.forEach((akapit) =>{
+            akapit.classList.add('zmiana');s
+        });
+
+        //usuwanie obrazka z strony
+        obrazek.remove();
+
+        //tworzymy nowy elem html i wstawiamy do strony 
+        const nowyObrazek = document.createElement('img');
+        nowyObrazek.src = 'https://th.bing.com/th/id/R.bbb2ee2e8775319d3c2176a03789b379?rik=9MNooFz4ti0nrg&pid=ImgRaw&r=0';
+
+        document.body.appendChild(nowyObrazek);
+    
+    </script>
+
+</body>
+</html>
