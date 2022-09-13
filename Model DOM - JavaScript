@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #id
+        {
+         background-color:aqua;
+         font-family: serif;
+         color: brown;
+        }
+
+        .p
+        {
+        background-color: antiquewhite;
+        font-family: 'Times New Roman';
+        color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="id">To jest pierwszy naglowek</h1>
+
+        <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Neque animi illum facilis quibusdam libero, cum eaque, enim incidunt dolores dicta quam sapiente molestias magnam eum nihil et? Laudantium, explicabo mollitia.</p>
+    
+        <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Neque animi illum facilis quibusdam libero, cum eaque, enim incidunt dolores dicta quam sapiente molestias magnam eum nihil et? Laudantium, explicabo mollitia.</p>
+    </div>
+
+</body>
+</html>
+
+    <script>
+    const naglowekGlowny = document.querySelector('h1');
+    const akapity = document.querySelectorAll('p');
+    const naglowekDIV = document.querySelector('div');
+
+
+
+    akapity[0].innerHTML='<b>Bardzo lubię się uczyć</b>';
+    naglowekGlowny.innerHTML='<b>JavaScript</b>';
+    naglowekGlowny.style.fontFamily = 'Tahoma';
+    akapity[1].innerHTML='<b>Aplikacje internetowe</b>';
+    naglowekGlowny.remove();
+    </script>
+
