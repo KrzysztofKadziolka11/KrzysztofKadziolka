@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red{
+            background-color: red;
+            width: 100px;
+            height: 100px;;
+        
+        }
+        .blue{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class ="red"></div>
+    <div class ="blue"></div>
+    <button>Kliknij mnie</button>
+
+    <script>
+        //pobieramy dwa divy
+        const divRed = document.querySelector('.red');
+        const divBlue = document.querySelector('.blue');
+        const btn = document.querySelector('button');
+
+        //po najechaniu na przycisk zmieni polozenie 
+            //btn.addEventListener('mouseover', ()=> {
+            //btn.style.transform = 'translateX(200px)';
+            //});
+
+        //po kliknieciu na przycisk znika nam div niebieski 
+             //btn.addEventListener('click', ()=> {
+             //divBlue.remove();
+             //});
+ 
+        //po kliknieciu na czerwony div zmieni sie jego kolor na inny
+            // divRed.addEventListener('click', function() {
+            // divRed.style.backgroundColor = 'black';
+            // });
+
+        //po kliknieciu kolory zamienia sie miejscami 
+            // divRed.addEventListener('click', function() {
+            // divRed.style.backgroundColor = 'blue';
+            // divBlue.style.backgroundColor = 'red';
+            // });
+    </script>
+</body>
+</html>
