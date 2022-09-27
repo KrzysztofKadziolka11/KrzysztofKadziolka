@@ -1,0 +1,42 @@
+<!--1. Umieść na stronie kilka pól wyboru typu checkbox oraz przycisk. Po kliknięciu przycisku na stronie ma zostać wyświetlona informacja o wartościach zaznaczonych pól.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <form action="" method="post">
+        <input type="checkbox" name="hobby" value="Pilka nozna"/>Pilka nozna 
+        <input type="checkbox" name="hobby" value="Siatkowka"/>Siatkowka 
+        <input type="checkbox" name="hobby" value="Hokej"/>Hokej 
+        <input type="submit" value="pokaz"/>
+    </form>   
+    <br><br> 
+    <div>Wynik</div>
+
+    <script>
+        //pobieramy formularz 
+        const formularz = document.querySelector('form');
+        //pobieramy pole checkbox formularza 
+        const wybor = document.querySelectorAll('input[name="hobby"]');   
+        //pobieramy diva
+        const div = document.querySelector('div');
+        //obsluga formularza
+        formularz.addEventListener('submit', (e)=>{
+            //wstrzymanie odswiezania strony
+            e.preventDefault();
+        //obsluga pol przy pomocy petli - obsluga formularza
+        wybor.forEach(w => {
+        if(w.checked) div.textContent += w.value + '';
+          });
+        });
+    </script>
+</body>
+</html>
