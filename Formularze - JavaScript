@@ -1,0 +1,41 @@
+<!--Umieść na stronie pole tekstowe oraz przycisk. Po kliknięciu przycisku w treści strony powinien pojawić się tekst z pola tekstowego.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--zad 2-->
+    <form action="" method="post">
+        <input type="number" name="liczba"/>
+        <input type="submit" value="pokaz"/>
+    </form>   
+    <br><br> 
+    <div>Wynik</div>
+
+    <script>
+        //pobieramy formularz 
+        const formularz = document.querySelector('form');
+        //pobieramy pole o nazwie liczba 
+        const poleLiczba = document.querySelector('input[name="liczba"]');
+        //pobieramy diva
+        const div = document.querySelector('div');
+
+        //obsluga formularza
+        formularz.addEventListener('submit', (e)=>{
+            //wstrzymanie odswiezania strony
+            e.preventDefault();
+            //pobieranie wartosci pola liczba 
+            const liczbaZFormularza = poleLiczba.value;
+            //powyzsza wartosc wrzucamy do diva
+            div.textContent = liczbaZFormularza;
+        });
+    </script>
+
+</body>
+</html>
