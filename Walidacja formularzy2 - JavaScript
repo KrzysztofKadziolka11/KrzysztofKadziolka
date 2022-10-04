@@ -1,0 +1,78 @@
+Walidacja formularzy - niedokończone z błędem 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .pad{
+            padding-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="" method="post">
+        <div class="pad">
+            <input type="password" name="login" placeholder="wprowadz login">
+            </div class="error"></div>
+        </div>
+        <div class="pad">
+            <input type="text" name="haslo" placeholder="wprowadz haslo">
+            </div class="error"></div>
+        </div>
+        <div class="pad">
+            <input type="submit" value="zaloguj sie">
+        </div>
+    </form>
+    <div class="answer"></div>
+
+    <script>
+        //pobieranie elementów strony 
+        const formularz = document.querySelector('form');
+        const polelogin = document.querySelector('input[name="login"]');
+        const polehaslo = document.querySelector('input[name="haslo"]');
+        const diverrors = document.querySelectorAll('.error');
+        const divanswer = document.querySelector('.answer');
+
+        //funkcje zabezpioeczające, które użyjemy w trakcie przetwarzania formularza
+        
+        //walidacja loginu
+        const walidacjaloginu = function(login){
+            const wzorloginu = /^[a-zA-Z 0-9]{3,}$/;
+            if( login == '')
+                return 'Wpisz login';
+            if(!wzorloginu.test(login))
+                return 'Login musi skladac sie z conajmniej 3 znakow (litery i cyfry)';
+        //jeżeli walidacja jest ok
+         return true;
+        };
+        //walidacja hasla 
+        const walidacjahasla = function(haslo){
+            if (haslo.length < 8)
+                return 'Halo musi miec przynajmniej 8 znakow';
+         //jeżeli walidacja jest ok
+         return true;
+        };
+
+        //obsluga formularza
+        formularz.addEventListener('submit', (e) => {
+        e.preventDefault();
+        diverrors[0].textContent = walidacjaloginu(polelogin.value);
+        diverrors[1].textContent = walidacjahasla(polehaslo.value);
+        
+
+        //zalogowano
+        if(walidacjaloginu(polelogin.value) == true && walidacjahasla (polehaslo.value)){
+            divanswer.innerHTML = '<h3>Zalogowano</h3>';
+        }
+        });
+
+    </script>
+
+</body>
+</html>
