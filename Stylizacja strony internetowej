@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu{
+            background-color: rgb(0, 125, 235);
+            height: 100px;
+            width:100%;
+        }
+        .lewa{
+            background-color: rgb(0, 238, 79);
+            width:30%;
+        }
+        .prawa{
+            width: 70%;
+        }
+        .sekcja1{
+            background-color: rgb(241, 160, 9);
+            height:100px;
+            width: 100%;
+        }
+        .container{
+            display: flex;
+        }
+        .sekcja2{
+            background-color: rgb(17, 172, 172);
+            height: 100px;
+            width: 50%;
+        }
+        .sekcja3{
+            background-color: rgb(118, 6, 223);
+            height: 100px;
+            width: 50%;
+        }
+        .sekcja4{
+            background-color: rgb(117, 22, 22);
+            height: 200px;
+            width: 100%;
+        }
+        .sekcja5{
+            background-color: rgb(43, 83, 2);
+            height: 200px;
+            width: 100%;
+        }
+        .sekcja6{
+            background-color: rgb(4, 22, 56);
+            
+            width: 100%;
+        }
+        .sekcja7{
+            background-color: rgb(107, 66, 16);
+            
+            width: 100%;
+        }
+        .sekcja8{
+            background-color: rgb(37, 56, 5);
+          
+            width: 100%;
+        }
+        .wrapper{
+            flex-basis: 50%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sekcja9{
+            background-color: rgb(4, 6, 136);
+            height:100px;
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="menu"></div>
+    <div class="lewa"></div>
+    <div class="prawa">
+        <div class="sekcja1"></div>
+        <div class="container">
+        <div class="sekcja2"></div>
+        <div class="sekcja3"></div>
+        </div>
+       <div class="container">
+        <div class="wrapper">
+            <div class="sekcja4"></div>
+            <div class="sekcja5"></div>
+        </div>
+        <div class="wrapper">
+            <div class="sekcja6"></div>
+            <div class="sekcja7"></div>
+            <div class="sekcja8"></div>
+       </div>
+    </div>
+    <div class="sekcja9"></div>
+</body>
+</html>
