@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--cdnjs - strona z której pobrany został skrypt. jQuery nie zadziała bez dostępu do internetu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    </script>
+
+
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto incidunt dignissimos autem placeat, eum fugiat quasi facere beatae eos praesentium pariatur? Accusamus ipsum iure quas ab! Commodi corrupti facere amet?</h1>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur exercitationem ipsum maxime quidem voluptatibus ratione doloremque, laboriosam aliquam rerum adipisci natus. Quibusdam laudantium quam dolorum commodi ea explicabo totam quasi?</h3>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto incidunt dignissimos autem placeat, eum fugiat quasi facere beatae eos praesentium pariatur? Accusamus ipsum iure quas ab! Commodi corrupti facere amet?</h1>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur exercitationem ipsum maxime quidem voluptatibus ratione doloremque, laboriosam aliquam rerum adipisci natus. Quibusdam laudantium quam dolorum commodi ea explicabo totam quasi?</h3>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto incidunt dignissimos autem placeat, eum fugiat quasi facere beatae eos praesentium pariatur? Accusamus ipsum iure quas ab! Commodi corrupti facere amet?</h1>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur exercitationem ipsum maxime quidem voluptatibus ratione doloremque, laboriosam aliquam rerum adipisci natus. Quibusdam laudantium quam dolorum commodi ea explicabo totam quasi?</h3>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est reprehenderit ullam maiores fugiat asperiores voluptatem deleniti dolorem harum autem non quam doloremque, excepturi, ea cumque aperiam corporis? Quisquam, expedita?</h4>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt officia itaque error incidunt aut iusto nesciunt laudantium. Esse molestias reiciendis rerum alias cumque repellendus inventore itaque atque laboriosam dolore?</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore est quod animi, doloribus, aliquam nemo nesciunt veritatis exercitationem facere voluptate corporis praesentium! Modi obcaecati, alias adipisci consequatur voluptas iste fugiat.</p>
+
+    <script>
+        //JavaScript 
+        //version 1
+        const h1=document.querySelector('h1');
+        h1.textContent = "Nowa tresc dodana przez JS";
+        document.querySelector('h1').style.color='red';
+
+        document.querySelectorAll('h1').forEach((element) =>{
+        element.textContent='Nowa tresc dodana przez JS';
+        element.style.color='red';
+        });
+        //version 2
+       //document.querySelector('h1').textContent = "Nowa tresc dodana przez JS";
+
+        //jQuery 
+        $('h3').text('Nowa tresc dodane przez jQuery'); //pobiera wszystkie h3, a JavaScript - NIE!!!
+        $('h3').css('color','blue');
+
+        const p=document.querySelector('p');
+        p.textContent ="JavaSrcipt (p)";
+        document.querySelector('p').style.color='blue';
+        document.querySelector('p').style.background='pink'
+        
+        $('h4').text('jQuery (h4)');
+        $('h4').css('color','white');
+        $('h4').css('background','black');
+    </script>
+
+</body>
+</html>
