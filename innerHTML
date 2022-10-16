@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .p{
+        background-color: aqua;
+        color: aliceblue;
+        }
+        .di{
+        background-color: black;
+        color: aliceblue;
+        }
+        .h{
+        background-color: aquamarine;
+        color:blueviolet
+        }
+        .h2{
+        background-color: aquamarine;
+        color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1 class="h">Naglowek</h1>
+    <div class="di">Div</div>
+    <p class="p">akapit 1 </p>
+    <p class="p">akapit 2</p>
+    <h2 class="h2">GHGGHH</h2>
+    <h2 class="h2">DFHDH</h2>
+    <h2 class="h2">DHFDFHDF</h2>
+    <h2 class="h2">DHDHD</h2>
+    <h2 class="h2">DHDHHD</h2>
+    <h2 class="h2">DFHFMHFCCD</h2>
+
+    <script>
+        const h1 = document.querySelector('h1');
+        const p = document.querySelectorAll('p');
+        const di = document.querySelector('div');
+        const h2 = document.querySelectorAll('h2');
+
+        p[0].innerHTML='<b>Bardzo Cię lubie </b>';
+        h1.innerHTML='<b>JavaScript</b>';
+        h1.style.fontFamily='Tahoma';
+        p[1].innerHTML='<b>Aplikacje internetowe</b>';
+        h1.remove();
+        h2[0].innerHTML='<b>H2Pierwszy</b>';
+        h2[1].innerHTML='<b>H2Drugi</b>';
+        h2[2].innerHTML='<b>H2Trzeci</b>';
+        h2[3].innerHTML='<b>H2Czwarty</b>';
+        h2[4].innerHTML='<b>H2Piaty</b>';
+        h2[5].remove();
+
+
+
+    </script>
+
+</body>
+</html>
