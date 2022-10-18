@@ -1,0 +1,80 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kolor{
+            color:red;
+        }
+        p{
+            transition: 1s;
+        }
+        .hide{
+            opacity:0;
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>dddddddddddddddd</h1>
+    <p>ddddddddddddddddd</p>
+    <button>dddddddddddddddd</button>
+
+    <script>
+        const elementh1 = document.querySelector('h1');
+        const elementp = document.querySelector('p');
+        const elementbutton = document.querySelector('button');
+        
+        elementbutton.addEventListener('click', function(){
+        //elementh1.style.color="red";
+        elementh1.classList.toggle('kolor');
+       /// elementp.style.opacity = 0;
+        elementp.classList.toggle('hide');
+        });
+
+        ///elementp.addEventListener('mouseover', ()=>{
+        ///    elementp.textContent='Nowazawartoscakapitu';
+        ///});
+    </script>
+</body>
+</html>
+-->
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" name="tekst">
+        <input type="submit" value="Pokaz">
+    </form>
+    <div></div>
+
+    <script>
+        const formularz = document.querySelector('form');
+        const div = document.querySelector('div');
+        const pole = document.querySelector('input[name="tekst"]');
+
+        formularz.addEventListener('submit' ,(e)=> {
+            e.preventDefault();
+            div.textContent = pole.value;
+        });
+    </script>
+</body>
+</html>
+
+-->
