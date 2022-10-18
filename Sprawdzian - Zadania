@@ -1,0 +1,236 @@
+<!--
+Zadanie 1a
+Znajomy poprosił Cię o stworzenie skryptu, którego zadaniem jest uporządkowanie i wyświetlenie dwóch liczb naturalnych. Do porządkowania liczb należy wykorzystać instrukcję warunkową. Wynik działania zaprezentuj na stronie. Uwzględnij też równość liczb. Użytkownik ma mieć możliwość wyboru między porządkowaniem rosnącym a malejącym.
+
+Rezultaty podlegające ocenie:
+- napisanie skryptu w języku JavaScript,
+- dołączenie skryptu do kodu HTML strony,
+- zaprojektowanie strony internetowej prezentującej wyniki aplikacji w sposób czytelny,
+- sprawdzenie, czy strona i skrypt uruchamiają się poprawnie,
+- sprawdzenie, czy wyniki wyświetlają się poprawnie.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        
+        <script>
+            const liczba = prompt("Podaj liczbe a: ");
+            const liczba1 = prompt("Podaj liczbe b: ");
+
+            if(liczba>liczba1){
+                document.write("Liczba pierwsza jest większa")
+            }
+            else if( liczba1>liczba ){
+                document.write("Liczba druga jest większa")
+            }
+            else{
+                document.write("Żadna z liczb nie jest największa")
+            }
+        </script>
+</body>
+</html>
+
+
+<!--
+Zadanie 1b
+Kolega poprosił Cię o napisanie aplikacji, która będzie ilustrowała działanie operatorów arytmetycznych: dodawania, odejmowania, mnożenia i dzielenia. Aplikacja powinna umożliwić wczytanie dwóch liczb, wykonywać wszystkie cztery podstawowe działania arytmetyczne i wyświetlać ich wyniki wraz z opisem wyświetlanych wartości. Dodatkowo należy zabezpieczyć aplikację przed dzieleniem przez zero.
+
+Rezultaty podlegające ocenie:
+- napisanie skryptu w języku JavaScript,
+- dołączenie skryptu do kodu HTML strony,
+- zaprojektowanie strony internetowej prezentującej wyniki aplikacji w sposób czytelny,
+- sprawdzenie, czy strona i skrypt uruchamiają się poprawnie,
+- sprawdzenie, czy wyniki wyświetlają się poprawnie.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div + div{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="number" name="liczba1" placeholder="podaj liczbe 1:">
+        <input type="number" name="liczba2" placeholder="podaj liczbe 2:">
+    </div>    
+
+    <div>
+        <button>Suma</button>
+        <button>Różnica</button>
+        <button>Iloczyn</button>
+        <button>Iloraz</button>
+    </div>
+
+    <div>
+        Wynik 
+    </div>
+
+    <script>
+        // pobieranie wszystkich buttonów 
+        const btns = document.querySelectorAll('button');
+        //pobieranie diva, w którym umieszczony zostanie wynik obliczeń
+        const divResults = document.querySelector('div+div+div') //pobranie trzeciego diva
+
+       //pobieranie inputów
+       const input1 = document.querySelector("input[name='liczba1']");
+       const input2 = document.querySelector("input[name='liczba2']");
+        //tworzenie funkcji +/-/*/ %
+
+        function suma(l1, l2){
+            return l1+l2;
+        };
+        //funkcja klasyczna
+        const odejmowanie = function(l1, l2){
+            return l1-l2;
+        };
+        //funkcja strzałowa
+        const mnozenie = (l1, l2) => {
+            return l1*l2;
+        };
+        const dzielenie = (l1, l2) =>{
+            return l1 / l2;
+        };
+
+        //pod button funkcja zdarzenia click (tworzenie)
+
+        //pierwszy button
+        btns[0].addEventListener('click',()=>{
+        //pobieranie wartości inputów
+        const liczba1 = input1.value *1; //konwersja niejawna (coś *1)
+        const liczba2 = input2.value *1;
+
+        //wyświetlanie wyniku dodawania w divie
+        divResults.textContent = 'Suma liczb wynosi '+ suma (liczba1, liczba2);
+        });
+
+        //drugi button
+        btns[1].addEventListener('click', function() {
+        const liczba1 = input1.value; 
+        const liczba2 = input2.value;
+        divResults.textContent = 'Różnica liczb wynosi '+ odejmowanie (liczba1, liczba2);
+        });
+
+        //trzeci button
+        btns[2].addEventListener('click', function() {
+        const liczba1 = input1.value; 
+        const liczba2 = input2.value;
+        divResults.textContent = 'Iloczyn liczb wynosi '+ mnozenie (liczba1, liczba2);
+        });
+
+        //czwarty button
+        btns[3].addEventListener('click', function() {
+        const liczba1 = input1.value; 
+        const liczba2 = input2.value;
+        divResults.textContent = 'Iloraz liczb wynosi '+ dzielenie (liczba1, liczba2);
+
+        if(0==liczba1){
+            document.write("Nie dzielimy przez zero")
+        }
+        else if(liczba2==0){
+            document.write("Nie dzielimy przez zero")
+        }
+        });
+    </script>
+
+</body>
+</html>
+
+
+<!--
+Zadanie 2a
+Jesteś praktykantem w firmie zajmującej się tworzeniem witryn i aplikacji internetowych. Otrzymałeś polecenie stworzenia aplikacji, której zadaniem jest obliczanie obwodu i pola trójkąta na podstawie długości boków. Użytkownik ma mieć możliwość wyboru między obliczeniem pola lub obwodu.
+
+Rezultaty podlegające ocenie:
+- napisanie skryptu w języku JavaScript,
+- dołączenie skryptu do kodu HTML strony,
+- utworzenie procedury obsługi zdarzenia wykonującej obliczenia,
+- zaprojektowanie strony internetowej prezentującej wyniki aplikacji w sposób czytelny,
+- sprawdzenie, czy strona i skrypt uruchamiają się poprawnie,
+- sprawdzenie, czy wyniki wyświetlają się poprawnie.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Podaj a");
+        var b = prompt("Podaj b");
+        var a1 = parseInt(a);
+        var b1 = parseInt(b);
+        var wynikpole = (a1 * b1)/2;
+        var wynikobwod = 2 * a1 + 2 * b1;
+        alert("Pole wynosi " + wynikpole + ", a obwód " + wynikobwod);
+    </script>
+
+</body>
+</html>
+
+
+<!--
+Zadanie 2b
+Jesteś praktykantem w firmie zajmującej się tworzeniem witryn i aplikacji internetowych. Otrzymałeś polecenie stworzenia aplikacji, której zadaniem jest uporządkowanie i wyświetlenie trzech liczb naturalnych. Do porządkowania liczb należy wykorzystać instrukcję warunkową. Wynik działania zaprezentuj na stronie. Użytkownik ma mieć możliwość wyboru, czy chce porządkować rosnąco czy malejąco liczby.
+
+Rezultaty podlegające ocenie:
+- napisanie skryptu w języku JavaScript,
+- dołączenie skryptu do kodu HTML strony,
+- zaprojektowanie strony internetowej prezentującej wyniki aplikacji w sposób czytelny,
+- sprawdzenie, czy strona i skrypt uruchamiają się poprawnie,
+- sprawdzenie, czy wyniki wyświetlają się poprawnie.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <script>
+            const liczba = prompt("Podaj liczbe a: ");
+            const liczba1 = prompt("Podaj liczbe b: ");
+            const liczba2 = prompt("Podaj liczbe c: ");
+
+            if(liczba>liczba1 || liczba>liczba2){
+                document.write("Liczba pierwsza jest największa")
+            }
+            else if( liczba1>liczba || liczba1>liczba2){
+                document.write("Liczba druga jest największa")
+            }
+            else if( liczba2>liczba || liczba2>liczba1){
+                document.write("Liczba trzecia jest największa")
+            }
+            else{
+                document.write("Żadna z liczb nie jest największa")
+            }
+        </script>
+</body>
+</html>
+
