@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="style.css"/>-->
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(243, 179, 40);
+            padding: 20px 30px;
+            border-bottom: 3px solid rgb(255, 153, 0);
+        }
+        .logo{
+            height: 100%;
+            object-fit: cover;
+        }
+        .hamburger{
+            height: 50px;
+            padding: 0 20px;
+        }
+        .menu-items{
+        display: none;
+        }
+        .header{
+            padding: 20px 30px;
+        }
+        .header img{
+            width: 100%;
+            object-fit: cover;
+        }
+        .header h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .header p{
+            padding: 15px 0;
+        }
+        .header button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 15px;
+        }
+        .banner{
+            height: 50px;
+            background-color: rgb(255, 153, 0);
+        }
+        .info{
+            padding: 20px 30px;
+        }
+            .info-item h3{
+            text-align: center;
+        }
+        .info-item button{
+            display: block;
+            margin: 0 auto;
+            padding: 10px 15px;
+            margin-bottom: 30px;
+        }
+
+        .info-item p{
+            padding: 15px 0;
+        }
+        .contact{
+            padding: 20px 30px;
+        }
+        .img{
+            display: none;
+        }
+        .form h2{
+            text-align: flex;
+            padding-bottom: 20px;
+        }
+        .form-item input{
+            display:block;
+            width: 100%;
+        }
+        .form-item textarea{
+            display:block;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        @media (min-width: 900px){
+            .menu-items{
+                display: flex;
+                list-style: none;
+            }
+            .menu-link{
+            display: block;
+            padding: 20px 30px;
+            border: 1px solid rgb(121, 85, 30);
+            text-decoration: none;
+            color: rgb(121, 85, 30);
+            }
+            .hamburger{
+            display: none;
+            }
+            .header{
+                display: flex;
+                width: 100%;
+            }
+            .image{
+                order: 2;
+                flex-basis: 60%;
+            }
+            .header h1{
+                text-align: left;
+            }
+            .wrapper{
+                flex-basis: 35%;
+            }
+            .header button {
+            margin: 0;
+            }
+            .banner{
+            height: 100px;
+            }
+            .info{
+                display: flex;
+                justify-content: space-between;
+            }
+            .info-item{
+                flex-basis: 30%;
+            }
+            .info-item h3{
+                text-align: left;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+    <nav class="menu">
+        <img src="https://placeimg.com/300/200/animals" alt="logo", class="logo"/>
+        <button class="hamburger">menu</button>
+        <!--ul>li*4>a-->
+        <ul class="menu-items">
+            <li><a href="#" class="menu-link">Start</a></li>
+            <li><a href="#" class="menu-link">Firma</a></li>
+            <li><a href="#" class="menu-link">Galeria</a></li>
+            <li><a href="#" class="menu-link">Kontakt</a></li>
+        </ul>
+    </nav>
+    <header class=" header">
+        <div class="image">
+            <img src="https://placeimg.com/1000/500/animals" alt="obrazek">
+        </div>
+        <div class="wrapper">
+        <h1> Witaj na stronie</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam officia natus dolores optio nostrum labore cupiditate nam dolorum deleniti laborum mollitia, provident sequi aperiam possimus! Itaque beatae corporis quod aut.</p>
+        <button>Opcja 1</button>
+    </div>
+    </header>
+    <aside class="banner"></aside>
+    <section class="info">
+        <div class="info-item">
+            <h3>Jakis tytuł</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid laborum distinctio tempore assumenda voluptates eaque culpa! Pariatur tenetur recusandae unde, nihil doloribus minus hic, temporibus similique ad optio itaque sapiente!</p>
+            <button>Czytaj więcej</button>
+        </div>
+        <div class="info-item">
+            <h3>Jakis tytuł</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid laborum distinctio tempore assumenda voluptates eaque culpa! Pariatur tenetur recusandae unde, nihil doloribus minus hic, temporibus similique ad optio itaque sapiente!</p>
+            <button>Czytaj więcej</button>
+        </div>
+        <div class="info-item">
+            <h3>Jakis tytuł</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid laborum distinctio tempore assumenda voluptates eaque culpa! Pariatur tenetur recusandae unde, nihil doloribus minus hic, temporibus similique ad optio itaque sapiente!</p>
+            <button>Czytaj więcej</button>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="img">
+            <img src="https://placeimg.com/1000/500/animals" alt="obrazek">
+        </div>
+        <div class="form">
+            <h2>Skontaktuj się z nami</h2>
+            <form action="" class="form-item">
+                <input type="text" placeholder="Imie"/>
+                <input type="text" placeholder="Nazwisko"/>
+                <textarea placeholder="Wiadomosc"></textarea>
+                <input type="submit" value="Wyslij"/>
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
