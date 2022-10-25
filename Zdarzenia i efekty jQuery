@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            body{
+                display: flex;
+            }
+            div{
+            width: 100px;
+            height: 100px;
+            }
+            .red{
+            background-color: red;
+            }
+            .blue{
+            background-color: blue;
+            display: none;
+            }
+            .wrap{
+                margin: 30px;
+            }
+            button{
+                margin-top: 20px;
+            }
+        </style>
+ </head>
+ <body>
+     <section class="wrap">
+        <div class="red"></div>
+        <button class="btn-red"> czerwony</button>
+     </section>
+    
+     <section class="wrap">
+        <div class="blue"></div>
+        <button class="btn-blue"> niebieski</button>
+    </section>
+
+    <script>
+        $('button.btn-red').click(function(){
+           //znikanie elem// $('div.red').hide(1000);
+           //$('div.red').show(1000); //pojawianie + w stylach- display: none;
+           $('div.red').slideUp(1000); //znikanie
+        });
+
+        $('button.btn-blue').click(function(){
+            //znikanie elem//$('div.blue').fadeOut(1000);
+            //$('div.blue').fadeIn(1000); //pojawianie + w stylach- display: none;
+            $('div.blue').slideDown(1000); //pojawianie
+        });
+
+    </script>
+
+ </body>
+ </html>
