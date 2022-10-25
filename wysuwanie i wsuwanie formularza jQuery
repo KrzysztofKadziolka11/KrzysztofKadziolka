@@ -1,0 +1,163 @@
+<!--Wysuwanie formularza -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+     .form h2{
+            text-align: flex;
+            padding-bottom: 20px;
+        }
+        .form-item input{
+            display:block;
+            width: 100%;
+        }
+        .wysuwanie{
+            display: none;
+        }
+</style>
+ 
+<body>
+    <section class="wysuwanie">
+        <div class="form">
+            <h2>Podaj dane, aby się zalogować</h2>
+            <form action="" class="form-item">
+                <input type="text" placeholder="Login"/>
+                <input type="text" placeholder="Hasło"/>
+                <input type="submit" value="Zaloguj się"/>
+            </form>
+        </div>
+    </section>
+
+    <button class="wysun">Wysuń</button>
+
+    <script>
+         $('button.wysun').click(function(){
+           $('section.wysuwanie').slideDown(1000); 
+        });
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--Wsuwanie formularza-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+     .form h2{
+            text-align: flex;
+            padding-bottom: 20px;
+        }
+        .form-item input{
+            display:block;
+            width: 100%;
+        }
+</style>
+ 
+<body>
+    <section class="wysuwanie">
+        <div class="form">
+            <h2>Podaj dane, aby się zalogować</h2>
+            <form action="" class="form-item">
+                <input type="text" placeholder="Login"/>
+                <input type="text" placeholder="Hasło"/>
+                <input type="submit" value="Zaloguj się"/>
+            </form>
+        </div>
+    </section>
+
+    <button class="wysun">Wsuń</button>
+
+    <script>
+         $('button.wysun').click(function(){
+           $('section.wysuwanie').slideUp(1000); 
+        });
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Wysuwanie i wsuwanie formularza-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+     .form h2{
+            text-align: flex;
+            padding-bottom: 20px;
+        }
+        .form-item input{
+            display:block;
+            width: 100%;
+        }
+        .wysuwanie{
+            display: none;
+        }
+</style>
+ 
+<body>
+    <section class="wysuwanie">
+        <div class="form">
+            <h2>Podaj dane, aby się zalogować</h2>
+            <form action="" class="form-item">
+                <input type="text" placeholder="Login"/>
+                <input type="text" placeholder="Hasło"/>
+                <input type="submit" value="Zaloguj się"/>
+            </form>
+        </div>
+    </section>
+
+    <button class="wysun">Wysuwanie i wsuwanie</button>
+
+    <script>
+         $('button.wysun').click(function(){
+           $('section.wysuwanie').slideToggle(1000); 
+        });
+    </script>
+    
+</body>
+</html>
