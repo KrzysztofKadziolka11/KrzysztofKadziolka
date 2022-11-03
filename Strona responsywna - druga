@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial;
+            box-sizing: border-box;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(190, 183, 183);
+            padding: 20px 30px;
+            border-bottom: 3px solid rgb(112, 112, 112);
+        }
+        .logo{
+            height: 100%;
+            object-fit: cover;
+        }
+        .menu-button{
+            height: 50px;
+            padding: 0 20px;
+        }
+        .menu-items{
+        display: none;
+        }
+
+        .header{
+            padding: 20px 30px;
+        }
+        .header img{
+            width: 100%;
+            object-fit: cover;
+        }
+        .header h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .header p{
+            padding: 15px 0;
+        }
+        .header button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 15px;
+        }
+
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(116, 111, 111);
+            height: 50px;
+            background-color: rgb(190, 183, 183);
+        }
+        .info{
+            padding: 20px 30px;
+        }
+            .info-item h3{
+            text-align: center;
+        }
+        .info-item button{
+            display: block;
+            margin: 0 auto;
+            padding: 10px 15px;
+            margin-bottom: 30px;
+        }
+
+        .info-item p{
+            padding: 15px 0;
+        }
+
+        .contact{
+            display: flex;
+            width: 100%;
+            padding: 20px 30px;
+        }
+        .img{
+            display: none;
+        }
+        .form{
+            width: 50%;
+        }
+        .form h2{
+            text-align: flex;
+            padding-bottom: 20px;
+        }
+        .form-item input{
+            display:block;
+            width: 100%;
+        }
+        .form-item textarea{
+            display:block;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .linkdostr{
+            text-decoration: none;
+            color:rgb(0, 0, 0);
+        }
+        .infoo{
+            display: flex;
+            border-top: 1px solid rgb(0, 0, 0);
+            justify-content: center;
+            color: rgb(0, 0, 0);
+            height: 50px;
+            background-color: rgb(190, 183, 183);
+        }
+        .usluga{
+            border-top: 1px solid rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            background-color: rgb(190, 183, 183);
+        }
+        .stopka{
+            display: flex;
+            align-items: center;
+            border-top: 1px solid black;
+        }
+        .contactp{
+            width: 50%;
+            display: none;
+        }
+        .to{
+            display: flex;
+        }
+
+
+        @media (min-width: 900px){
+            .menu-items{
+                display: flex;
+                list-style: none;
+            }
+            .menu-link{
+            display: block;
+            padding: 20px 30px;
+            border-right: 1px solid rgb(121, 85, 30);
+            text-decoration: none;
+            color: rgb(121, 85, 30);
+            }
+            .menu-button{
+            display: none;
+            }
+            .header{
+                display: flex;
+                width: 100%;
+            }
+            .image{
+                order: 2;
+                flex-basis: 60%;
+            }
+            .header h1{
+                text-align: left;
+            }
+            .wrapper{
+                flex-basis: 35%;
+            }
+            .header button {
+            margin: 0;
+            }
+            .banner{
+            height: 100px;
+            }
+            .info{
+                display: flex;
+                justify-content: space-between;
+            }
+            .info-item{
+                flex-basis: 30%;
+            }
+            .info-item h3{
+                text-align: left;
+            }
+            .contactp{
+                display: flex;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+    <nav class="menu">
+        <img src="https://placeimg.com/300/200/animals" alt="LOGO" class="logo">
+        <button class="menu-button">MENU</button>
+        <ul class="menu-items">
+            <li><a href="#" class="menu-link">Link1</a></li>
+            <li><a href="#" class="menu-link">Link2</a></li>
+            <li><a href="#" class="menu-link">Link3</a></li>
+            <li><a href="#" class="menu-link">Link4</a></li>
+        </ul>
+    </nav>
+    <header class=" header">
+        <div class="image">
+            <img src="https://placeimg.com/1000/500/animals" alt="obrazek">
+        </div>
+        <div class="wrapper">
+        <h1> Witaj na stronie</h1>
+    </header>
+
+    <section class="info">
+        <div class="info-item">
+            <h3 class="usluga">Usługa 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid laborum distinctio tempore assumenda voluptates eaque culpa! Pariatur tenetur recusandae unde, nihil doloribus minus hic, temporibus similique ad optio itaque sapiente!</p>
+            <button><a class="linkdostr" href="https://www.google.com/">Zobacz więcej</a></button>
+        </div>
+        <div class="info-item">
+            <h3 class="usluga">Usługa 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid laborum distinctio tempore assumenda voluptates eaque culpa! Pariatur tenetur recusandae unde, nihil doloribus minus hic, temporibus similique ad optio itaque sapiente!</p>
+            <button><a class="linkdostr" href="https://www.google.com/">Zobacz więcej</a></button>
+        </div>
+        <div class="info-item">
+            <h3 class="usluga" >Usługa 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid laborum distinctio tempore assumenda voluptates eaque culpa! Pariatur tenetur recusandae unde, nihil doloribus minus hic, temporibus similique ad optio itaque sapiente!</p>
+            <button><a class="linkdostr" href="https://www.google.com/">Zobacz więcej</a></button>
+        </div>
+    </section>
+    <aside class="banner">Full Banner Ad - 468x60</aside>
+    <br>
+    <h2 class="infoo" >Skontaktuj się z nami</h2>
+        <section class="contact">
+            
+            <div class="contactp">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates dignissimos vel cumque accusamus reiciendis laudantium cum, corporis odio vero ea saepe iste esse possimus labore modi sint quasi commodi.</p>
+            </div>
+            
+            <div class="form">
+                <form action="" class="form-item">
+                    <div class="to">
+                        <input type="text" placeholder="Imie"/>
+                        <input type="text" placeholder="Nazwisko"/>
+                    </div>
+                    <textarea placeholder="Wiadomosc"></textarea>
+                    <input type="submit" value="Wyslij"/>
+                </form>
+            </div>
+    </section>
+
+    <footer class="stopka">
+        Dane kontaktowe: Krzysztof Kądziołka 
+
+    </footer>
+
+</body>
+
+
+</html>
