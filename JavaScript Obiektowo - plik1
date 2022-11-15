@@ -1,0 +1,99 @@
+
+<!--Pierwszy plik index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Obiektowy</title>
+    <script src="Samochód.js"></script>
+    <script src="Komis.js"></script>
+
+</head>
+<body>
+
+    <h2>Zadanie 1</h2>
+    <h4>- Utwórz klasę Samochód, która posiada właściwości: marka, model, cena, rocznik, spalanie.</h4>
+    <h4>- Do klasy dodaj metody, wiek() oraz koszt(). Metoda wiek() ma obliczać wiek samochodu na podstawie rocznika. Metoda koszt() ma obliczać koszt przejechania 100 km.</h4>
+    <h4>- Utwórz kilka obiektów klasy Samochód. Na stronie wyświetl dane każdego obiektu.</h4>
+
+    
+    <script>
+        const auto1 = new Samochód('Skoda','Fabia',50000,2018,5);
+        const auto2 = new Samochód('Opel','Astra',4500,2000,9);
+        const auto3 = new Samochód('Subary','Forester',1000,2005,14);
+
+        const div1 = document.createElement('div');
+        document.body.appendChild(div1);
+        const div2 = document.createElement('div');
+        document.body.appendChild(div2);
+        const div3 = document.createElement('div');
+        document.body.appendChild(div3);
+
+        div1.style.marginTop = '60px';
+
+        div1.innerHTML = `
+        <p>Dane samochodu: ${auto1.marka} ${auto1.model}: </p>
+        <p>Cena: ${auto1.cena} </p>
+        <p>Rocznik: ${auto1.rocznik} </p>
+        <p>Spalanie: ${auto1.spalanie} na 100km </p>
+        <p>Wiek samochodu aktualny: ${auto1.wiek()}</p>
+        <p>Koszt przejechania 100km: ${auto1.koszt(6.6)}zł</p>
+        `;
+
+        div1.style.marginBottom = '50px';
+
+        div2.innerHTML = `
+        <p>Dane samochodu: ${auto2.marka} ${auto2.model}: </p>
+        <p>Cena: ${auto2.cena} </p>
+        <p>Rocznik: ${auto2.rocznik} </p>
+        <p>Spalanie: ${auto2.spalanie} na 100km </p>
+        <p>Wiek samochodu aktualny: ${auto2.wiek()}</p>
+        <p>Koszt przejechania 100km: ${auto2.koszt(6.6)}zł</p>
+        `;
+
+        div2.style.marginBottom = '50px';
+
+        div3.innerHTML = `
+        <p>Dane samochodu: ${auto3.marka} ${auto3.model}: </p>
+        <p>Cena: ${auto3.cena} </p>
+        <p>Rocznik: ${auto3.rocznik} </p>
+        <p>Spalanie: ${auto3.spalanie} na 100km </p>
+        <p>Wiek samochodu aktualny: ${auto3.wiek()}</p>
+        <p>Koszt przejechania 100km: ${auto3.koszt(6.6)}zł</p>
+        `;
+
+        div3.style.marginBottom = '50px';
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!--Drugi plik Samochód.js-->
+
+class Samochód{
+    constructor(marka, model, cena, rocznik, spalanie){
+        this.marka = marka;
+        this.model = model;
+        this.cena = cena;
+        this.rocznik = rocznik;
+        this.spalanie = spalanie;
+    }
+
+    wiek(){
+        const data =new Date();
+        const rok = data.getFullYear();
+        const wiek = rok - this.rocznik;
+        return wiek;
+    }
+    
+    koszt(cenaPaliwa){
+        return cenaPaliwa * this.spalanie; 
+    }
+}
