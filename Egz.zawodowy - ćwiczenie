@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl"><!--"pl"-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGZ.ZAWODOWY - ĆWICZENIE</title>
+    <!--Style.css-->
+    <!--<link rel="stylesheet" href="style.css"/>-->
+    <style>
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        font-family:Georgia, serif;
+    }
+    .blok-lewy{
+        width: 30%;
+        height: 600px;
+        background-color: maroon;
+        color: white;
+    }
+    .blok-prawy{
+        width: 70%;
+        height: 600px;
+        background-color: maroon;
+        color: white;
+        overflow-y: auto;
+    }
+    .stopka{
+        width: 100%;
+        background-color: dimgray;
+        color: white;
+    }
+    .blok-prawy > div {
+        display: flex;
+    }
+    .blok-prawy > p {
+        padding: 10px;
+    }
+    .blok-prawy > img{
+        padding: 10px;
+        border: 1px solid white;
+    }
+    </style>
+
+</head>
+<body>
+    <section class="blok-lewy">
+        <h1>Konfigurator stylu</h1>
+        <p>Podaj kolor tła</p>
+        <button>Indiego</button>
+        <button>SteelBlue</button>
+        <button>Olive</button>
+
+        <p>Podaj kolor czcionki</p>
+        <select name="kolor">
+            <option value="white">White</option>
+            <option value="tan">Tan</option>
+            <option value="bisque">Bisque</option>
+            <option value="plum">Plum</option>
+        </select>
+
+        <p>Podaj rozmiar czcionki w %, np. 200%</p>
+        <input type="text" name="czcionka"/>
+
+        <P>Czy rysunek ma mieć ramkę?</P>
+        <input type="checkbox" name="ramka" checked >Rysuj ramkę
+
+        <p>Jaki jest typ punktora listy</p>
+        <input type="radio" name="punktory" value="disc" checked> dysk
+        <input type="radio" name="punktory" value="square"> kwadrat
+        <input type="radio" name="punktory" value="circle"> okrąg
+        
+
+    </section>
+
+    <section class="blok-prawy">
+       <div>
+            <img src=image.png/ alt="polwysep Giblartar" width="150px" height="150px">
+            <ul>
+                <li>element1</li>
+                <li>element2</li>
+                <li>element3</li>
+            </ul>
+        </div>
+        <p style="font-size:30px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta unde minus placeat voluptate quam nemo sit magnam voluptatibus perspiciatis? Voluptates reiciendis tenetur a. Obcaecati blanditiis autem beatae ad praesentium!</p>    
+    </section>
+    
+    <footer class="stopka"> Autor: Stopka</footer>
+    
+</body>
+</html>
+
+
+<!--Duplikowanie lini - shift+alt+strzałka-->
