@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .str{
+    background-color: rgb(88, 2, 2);
+    width: 50%;
+    
+    }
+    .str1{
+    background-color: rgb(133, 46, 46);
+    width: 50%;
+    }
+    .str2{
+    background-color: rgb(88, 2, 2);
+    width: 50%;
+    }
+    .str3{
+    background-color: rgb(133, 46, 46);
+    width:50%;
+    }
+    .stoopka{
+    background-color: brown;
+    width: 100%;
+    text-align: end;
+    }
+    .styl{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .p{
+        border-bottom: 1px solid white;
+    }
+    </style>
+    
+
+
+</head>
+<body>
+    <div class="styl">
+        <div class="str">
+            <button class="button">pierwszy</button>   
+            <button class="button">drugi</button>   
+            <button class="button">trzeci</button>   
+       </div>
+        <div class="str3">
+            <h2>Gromady Kręgowców</h2>
+        </div>
+    </div>
+    <div class="styl">
+        <div class="str1">
+        <p class="p">3.  asasasasdasdads</p>
+        <p class="p">4.  asasasasdasdads</p>
+        <p class="p">5.  asasasasdasdads</p>
+        <p class="p">6.  asasasasdasdads</p>
+        <p class="p">7.  asasasasdasdads</p>
+        <p class="p">8.  asasasasdasdads</p>
+        <p class="p">9.  asasasasdasdads</p>
+        </div>
+        
+        <div class="str2">
+        <h2>Ptaki</h2>
+        <ol>
+            <li>Wrona</li>
+            <li>Wrona</li>
+            <li>Wrona</li>
+        </ol>
+        <img src="wrona.jpg" alt="wrona" width="300px" height="300px">
+        </div>
+
+        <div class="stoopka">
+            <p>Strona o ptakach</p>
+        </div>
+    </div>
+</body>
+</html>
