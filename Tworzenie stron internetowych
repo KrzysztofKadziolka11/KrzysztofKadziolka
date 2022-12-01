@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .motto h2{
+            font-size: 3.72rem;
+            text-transform: uppercase;
+        }
+
+        .motto p{
+            font-size: 3rem;
+            padding: 40px 0;
+        }
+
+        .motto p.author{
+            font-size: 1.5rem;
+        }
+
+        /*sekcja hobby*/
+        .hobby{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        
+        .hobby h2{
+            font-size: 3.75rem;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 3opx 0;
+            width: 100%;
+        }
+
+        .hobby-item{
+            width: 50%;
+            height: 350px;
+            background-position: center;
+            background-size: 100%;
+            transition: 1s ease-in-out;
+            background-repeat: no-repeat;
+        }
+
+        .hobby-item:nth-child(2){
+            background-image: url('.https://radio5.com.pl/wp-content/uploads/2022/11/wyremontowana-droga-zdj.-Gmina-Wegorzewo.jpg');
+        }
+
+        .hobby-item:nth-child(3){
+            background-image: url('https://radio5.com.pl/wp-content/uploads/2022/11/wyremontowana-droga-zdj.-Gmina-Wegorzewo.jpg');
+        }
+
+        .hobby-item:nth-child(4){
+            background-image: url('https://radio5.com.pl/wp-content/uploads/2022/11/wyremontowana-droga-zdj.-Gmina-Wegorzewo.jpg');
+        }
+
+        .hobby-item:nth-child(5){
+            background-image: url('https://radio5.com.pl/wp-content/uploads/2022/11/wyremontowana-droga-zdj.-Gmina-Wegorzewo.jpg');
+        }
+
+        .hobby{
+            background-size: 120%;
+        }
+
+        .hobby-item p{
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 350px;
+            color: #fff;
+            font-size: 3rem;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .hobby-item:hover p{
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        @media(max-width: 600px){
+        .hobby h2{
+            font-size: 1.5rem;
+        }
+        .hobby-item{
+            background-size: cover;
+            width: 100%;
+        }
+        .hobby-item p{
+            opacity: 1;
+            height: 80px;
+            line-height: 80px;
+        }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--brak zawartosci do .motto h2, motto p, motto p.author-->
+
+    <section class="hobby">
+        <h2>W wolnym czasie uwielbiam</h2>
+        <div class="hooby-item">
+            <p>Chodzić po górach</p>
+        </div>  
+        <div class="hooby-item">
+            <p>Patrzeć wysoko</p>
+        </div>  
+        <div class="hooby-item">
+            <p>Zmieniać świat</p>
+        </div>  
+        <div class="hooby-item">
+            <p>Jeść owoce i warzywa</p>
+        </div>   
+    </section>
+    
+
+</body>
+</html>
