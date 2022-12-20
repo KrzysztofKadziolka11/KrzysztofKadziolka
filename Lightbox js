@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technika lightbox Js</title>
+
+    <link rel="stylesheet" href="./dist/css/lightbox.min.css"/>
+    <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+    
+    <h1>Moje obrazki</h1>
+    <div>
+        <a href="./img/d1.jpg" data-lightbox="obrazek" data-title="Obrazek1"><img src="./img/m1.jpg" alt="Obrazek1"></a>
+        <a href="./img/d2.jpg" data-lightbox="obrazek" data-title="Obrazek2"><img src="./img/m2.jpg" alt="Obrazek2"></a>
+        <a href="./img/d3.jpg" data-lightbox="obrazek" data-title="Obrazek3"><img src="./img/m3.jpg" alt="Obrazek3"></a>
+        <a href="./img/d4.jpg" data-lightbox="obrazek" data-title="Obrazek4"><img src="./img/m4.jpg" alt="Obrazek4"></a>
+    </div>
+</body>
+</html>
