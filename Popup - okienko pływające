@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okienko popupu</title>
+
+    <style>
+        .popup-container{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8)
+
+        }
+
+        .popup{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 70%;
+        background-color: white;
+        
+        }
+        .show{
+            display: block;
+        }
+        .popup header{
+            background-color: orange;
+            height: 80px;
+        }
+        
+        .popup span{
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            color: orange;
+            font-family: Arial;
+            font-size: 32px;
+            background-color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            /*Way number First*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*Way numner second*/
+            /*text-align: center;
+            line-height: 50px;*/
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, fugiat architecto. Expedita sunt consequuntur dicta adipisci minus deserunt explicabo laudantium ullam nisi nulla quod labore, tempora ad commodi? Quo, perferendis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt inventore consequuntur iure saepe, obcaecati expedita laudantium excepturi, sit rerum consequatur veniam hic, numquam repellat tempora illo odit necessitatibus harum?</p>
+    
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, fugiat architecto. Expedita sunt consequuntur dicta adipisci minus deserunt explicabo laudantium ullam nisi nulla quod labore, tempora ad commodi? Quo, perferendis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt inventore consequuntur iure saepe, obcaecati expedita laudantium excepturi, sit rerum consequatur veniam hic, numquam repellat tempora illo odit necessitatibus harum?</p>
+    
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, fugiat architecto. Expedita sunt consequuntur dicta adipisci minus deserunt explicabo laudantium ullam nisi nulla quod labore, tempora ad commodi? Quo, perferendis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt inventore consequuntur iure saepe, obcaecati expedita laudantium excepturi, sit rerum consequatur veniam hic, numquam repellat tempora illo odit necessitatibus harum?</p>
+    
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, fugiat architecto. Expedita sunt consequuntur dicta adipisci minus deserunt explicabo laudantium ullam nisi nulla quod labore, tempora ad commodi? Quo, perferendis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt inventore consequuntur iure saepe, obcaecati expedita laudantium excepturi, sit rerum consequatur veniam hic, numquam repellat tempora illo odit necessitatibus harum?</p>
+    
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, fugiat architecto. Expedita sunt consequuntur dicta adipisci minus deserunt explicabo laudantium ullam nisi nulla quod labore, tempora ad commodi? Quo, perferendis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt inventore consequuntur iure saepe, obcaecati expedita laudantium excepturi, sit rerum consequatur veniam hic, numquam repellat tempora illo odit necessitatibus harum?</p>
+    
+    <br><br>
+    <h2>Tutaj przycisk: </h2>
+    <button>przycisk</button>
+    <br><br>
+    
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, fugiat architecto. Expedita sunt consequuntur dicta adipisci minus deserunt explicabo laudantium ullam nisi nulla quod labore, tempora ad commodi? Quo, perferendis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt inventore consequuntur iure saepe, obcaecati expedita laudantium excepturi, sit rerum consequatur veniam hic, numquam repellat tempora illo odit necessitatibus harum?</p>
+    
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, fugiat architecto. Expedita sunt consequuntur dicta adipisci minus deserunt explicabo laudantium ullam nisi nulla quod labore, tempora ad commodi? Quo, perferendis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt inventore consequuntur iure saepe, obcaecati expedita laudantium excepturi, sit rerum consequatur veniam hic, numquam repellat tempora illo odit necessitatibus harum?</p>
+    
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, fugiat architecto. Expedita sunt consequuntur dicta adipisci minus deserunt explicabo laudantium ullam nisi nulla quod labore, tempora ad commodi? Quo, perferendis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt inventore consequuntur iure saepe, obcaecati expedita laudantium excepturi, sit rerum consequatur veniam hic, numquam repellat tempora illo odit necessitatibus harum?</p>
+    
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, fugiat architecto. Expedita sunt consequuntur dicta adipisci minus deserunt explicabo laudantium ullam nisi nulla quod labore, tempora ad commodi? Quo, perferendis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt inventore consequuntur iure saepe, obcaecati expedita laudantium excepturi, sit rerum consequatur veniam hic, numquam repellat tempora illo odit necessitatibus harum?</p>
+
+
+    <div class="popup-container">
+        <div class="popup">
+            <!--Zawartość - kod-->
+            <span>X</span>
+            <header></header>
+            <footer></footer>
+        </div>
+    </div>
+
+    <script>
+    //pobieranie przycisku i popupa
+    const btn = document.querySelector('button');
+    const popup = document.querySelector('.popup-container');
+    //pobieramy x zamykającgo okno
+    const x = document.querySelector('.popup span');
+    
+    //obsługa zdarzenia klikania w przycisk 
+    btn.addEventListener('click', function(){
+    popup.classList.add('show');
+    });
+    
+    //obslugujemy zdarzenie klikniecia w x
+    x.addEventListener('click', function(){
+    popup.classList.remove('show');
+    });
+    </script>
+
+</body>
+</html>
