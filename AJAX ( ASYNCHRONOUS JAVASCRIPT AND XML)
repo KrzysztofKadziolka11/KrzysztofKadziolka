@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENT AJAX</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <form>
+        <label>
+        Wybierz płeć: 
+        <select name="plec">
+            <option value="both">Wszyscy</option>
+            <option value="female">Kobiety</option>
+            <option value="male">Mężczyźni</option>
+        </select>
+        </label>
+    
+    <label>
+        Liczba osób:
+        <input type="number" name="liczba_osób" value="5"/>
+    </label>
+    
+    <input type="submit" value="pokaż użytkowników"/>
+    </form>
+
+    <!--wyświetlanie użytkowników-->
+    <div class="uzytkownicy"></div>
+
+    <script src="skrypt.js">
+        //pobieranie formularza
+        const formularz = document.querySelector('form');
+        //pobieramy diva, w którym będziemy wyświetlać użytkowników 
+        const divUzytkownicy = document.querySelector('div.uzytkownicy'); 
+        //tworzymy funkcje uzytwkonicy 
+        const uzytkownicy = function(e) {
+            e.preventDefault();
+            //pobieramy wartości pól z formularza 
+            const plec = document.querySelector('[name="plec"]').value;
+            const ilosc = document.querySelector('[name="liczba_osob"]').value;
+            const url = `https://randomuser.me/api/?results=${ilosc}&gender=${plec=='both' ? 'male,female': plec}`;
+
+            //AJAX
+            fetch(url)
+            .then()
+            .then()
+            .catch()
+        };
+        
+        //obsluga zdarzenia submit formularza
+        forlmularz.addEventListener('submit', uzytkownicy);
+    </script>
+
+</body>
+</html>
