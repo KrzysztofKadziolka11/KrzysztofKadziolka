@@ -1,0 +1,65 @@
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+.baner {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    
+}
+.glowny {
+    background-color: Seashell;
+    height: 500px;
+    overflow: auto;
+}
+.opinie {   
+display: flex;
+
+background-color: white;
+color: DimGray;
+width: 60%;
+height: 220px;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+img{
+margin: 10px;
+border-radius: 5%;
+
+}
+.stopka {
+    display: flex;
+}
+.stopki {
+    background-color: tomato;
+    color: white;
+    width: 25%;
+    height: 160px;
+}
+
+h2 {
+text-align: center;
+color: black;
+}
+
+h1 {
+text-align: center;
+}
+
+
+a {
+    color: white;
+}
+
+h4 { 
+    text-align: right;
+    padding-right:  50px;
+}
+
+p {
+    padding: 10px;
+    font-size: 150%;
+    font-style: italic;
+}
