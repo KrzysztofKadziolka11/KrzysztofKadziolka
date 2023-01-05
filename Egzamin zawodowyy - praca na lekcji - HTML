@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinie klientów</title>
+    
+    <link rel="stylesheet" href="styl3.css"/>   
+
+
+</head>
+<body>
+   <section class="baner">
+    <h1>Hurtownia spożywcza</h1>
+
+        <section class="glowny">
+            <h2>Opinie naszych klientów</h2>
+
+            <section class="opinie">
+                <section>    
+                    <img src="anna.jpg" alt="Anna">
+                </section>
+                <section>    
+                    <p>Dobra współpraca, zawsze świeże towary i miła obsługa</p>
+                    <h4><b>Anna</b></h4>
+                </section>
+            </section>
+    
+            <section class="opinie">
+                <section>    
+                    <img src="ewa.jpg" alt="Ewa">
+                </section>
+                <section>    
+                    <p>Polecam hurtownię za profesjonalne podejście do klienta</p>
+                    <h4><b>Ewa</b><h4>
+                </section>
+            </section>
+        </section>
+        
+        <section class="stopka">
+           <section class="stopki">
+                <h3>Współpracuj z nami</h3>
+                <a href="http://sklep.pl/">Sklep 1</a>
+            </section>
+           <section class="stopki">
+                <h3>Nasi top klienci</h3>
+                <ol>
+                    <li>Jan Nowak, 3305 pkt.</li>
+                    <li>Judy Beck, 3055 pkt.</li>
+                    <li>Ewa Nowakowska, 2045 pkt.</li>
+                </ol>
+           </section>
+           <section class="stopki">
+                <h3>Skontaktuj się z nami</h3>
+              <p>Telefon: 111222333</p>
+           </section>
+           <section class="stopki">
+                <h3>Autor: Krzysztof Kądziołka 4B</h3>
+           </section> 
+
+        </section>
+
+
+   </section>
+</body>
+</html>
