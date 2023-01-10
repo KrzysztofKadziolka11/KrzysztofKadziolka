@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENT AJAX</title>
+    <link rel="stylesheet" href="style.css"/>
+
+
+    <style>
+    div.uzytkownicy{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap:50px;
+        margin-top: 50px;
+
+    }
+    div.user{
+        display:flex;
+    }
+    div.user > p{
+        padding-left: 10px;
+    }
+    </style>
+
+</head>
+
+
+<body>
+
+    <form>
+        <label>
+        Wybierz płeć: 
+        <select name="plec">
+            <option value="both">Wszyscy</option>
+            <option value="female">Kobiety</option>
+            <option value="male">Mężczyźni</option>
+        </select>
+        </label>
+
+    <label>
+        Liczba osób:
+        <input type="number" name="liczba_osób" value="5"/>
+    </label>
+
+    <input type="submit" value="pokaż użytkowników"/>
+    </form>
+
+    <!--wyświetlanie użytkowników-->
+    <div class="uzytkownicy"></div>
+
+    <script src="skrypt.js">
+        //pobieranie formularza
+        const formularz = document.querySelector('form');
+        //pobieramy diva, w którym będziemy wyświetlać użytkowników 
+        const divUzytkownicy = document.querySelector('div.uzytkownicy'); 
+        //tworzymy funkcje uzytwkonicy 
+        const uzytkownicy = function(e) {
+            e.preventDefault();
+            //pobieramy wartości pól z formularza 
+            const plec = document.querySelector('[name="plec"]').value;
+            const ilosc = document.querySelector('[name="liczba_osob"]').value;
+            const url = `https://randomuser.me/api/?results=${ilosc}&gender=${plec=='both' ? 'male,female': plec}`;
+
+            //AJAX
+            fetch(url)
+            .then(response=>{
+            //sprawdzamy co nam serwer zwruci, jesli blad to wyswietlamy komunikat, a jesli wszystko ok to zwracamy dane otrzymane od serwera w formacie json
+                if(response.status != 200)
+                    throw Error('blad serwera');
+                else
+                    return response.json();
+            })
+
+            .then(json=>{ 
+                //wynik otrzymany z pierwszego then przekazujemy do funkcji, ktora bedzie odpowiadala za wyswietlanie konkretnychdanych uzytkownika
+                pokazUzytkownikow(json.results);
+            })
+
+            .catch((err)=>{
+             console.log(err);   
+            });
+        };
+
+        const pokazUzytkownikow = function (users){
+            divUzytkownicy.innerHTML= '';
+            //console.log(users[0].name.first);
+            //petla firEach - dzieki petli wybieramy z kazdego obiektukonkretne dane i wyswietlamy na stronie 
+            users.forEach((user)=> {
+                //kazda osobe wyswieltmay  w oddzielnej sekcji 
+                const div = document.createElement('div');
+                //w celu latwiejszej stylizacji dodajemy do diva klase 
+                div.setAttribute('class', 'user');
+                //do diva wrzucamydane osoby 
+                div.innerHTML = `
+                <img src="${user.picture.medium}" alt="">
+                <p>${user.name.title} ${user.name.first} ${user.name.last}</p> 
+                `;
+            //do glownego diva o klasie uzytkownicy dodajemy nowo utworzonego diva z zawartoscia
+            divUzytkownicy.appendChild(div);    
+            });
+        };
+
+        //obsluga zdarzenia submit formularza
+        formularz.addEventListener('submit', uzytkownicy);
+    </script>
+
+</body>
+</html>
