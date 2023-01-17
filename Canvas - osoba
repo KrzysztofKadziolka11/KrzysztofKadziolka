@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+        }
+        canvas{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid orangered
+        }
+    </style>
+
+</head>
+<body>
+    <canvas width="800" height="700"></canvas>
+    
+    <script>
+        const canvas = document.querySelector('canvas');
+        const ctx = canvas.getContext('2d');
+    
+       
+       ctx.beginPath();
+       ctx.fillStyle = 'orange';
+       ctx.arc(400,400,180,0,(Math.PI / 180)*360, true);
+       ctx.stroke();
+       ctx.fill();
+       ctx.beginPath();
+       ctx.fillStyle = 'black';
+       ctx.arc(315,350,30,0,(Math.PI / 180)*360, true);
+       ctx.stroke();
+       ctx.fill();
+       ctx.beginPath();
+       ctx.arc(485,350,30,0,(Math.PI / 180)*360, true);
+       ctx.stroke();
+       ctx.fill();
+       ctx.fillStyle='red';
+       ctx.fillRect(330,450,150,20);
+       ctx.beginPath();
+       ctx.lineWidth = 3;
+       ctx.strokeStyle = 'black';
+       ctx.moveTo(135,235);
+       ctx.lineTo(235,335);
+       ctx.fill();
+       ctx.stroke();    
+    </script>
+
+</body>
+</html>
+
