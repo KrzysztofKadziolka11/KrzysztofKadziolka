@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+        }
+        canvas{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid orangered
+        }
+    </style>
+
+</head>
+<body>
+    <canvas width="800" height="500"></canvas>
+
+    <script>
+        const canvas = document.querySelector('canvas');
+        const ctx = canvas.getContext('2d');
+
+
+        //tworzenie animacji canvas 
+        //let x = canvas.width / 2;
+        //let y = canvas.height / 2;
+        //const h = 60;
+        //const fps = 20;
+
+        //function animacja(){
+        //    ctx.clearRect(0, 0, canvas.width, canvas.height); //wyczyszcza cały canvas 
+        //    x += 2;
+        //    y +=1;
+        //    ctx.fillRect(x - h / 2, y - h / 2, h, h);
+        //}
+        //setInterval(anaimacja, 1000 / fps); 
+
+        ctx.fillStyle = '#FF0000'; // kolor
+        ctx.fillRect(0,0,100,100); //prostokat wypelniony o wymiarzach 100X100, 0(x),0(y) - pozycja poczatku rysowania 
+        ctx.fillStyle = '#00FF00';
+        ctx.fillRect(100,0,100,100);
+        ctx.strokeStyle='blue'; //kolor
+        ctx.strokeRect(200,0,100,100)//pusty prostokat
+
+        //tworzenie animacji 
+        const h = 60;
+        const fps = 20;
+        let lastTime = 0;
+        //time i reszta - jesli chcemy, aby było mniej niż 60 klatek na sekundę
+        function animacja(time){
+        requestAnimationFrame(animacja);
+            if (time - lastTime >= 1000 / fps) {
+                lastTime = time;
+                ctx.clearRect(0, 0, canvas.width, canvas.height); // wyczyszcza cał canvas
+                x+= 2; 
+                ctx.fillRect(x - h / 2, y - h / 2, h, h);
+            }
+        }
+        animacja();
+    </script>
+
+</body>
+</html>
