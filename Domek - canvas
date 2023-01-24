@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--
+        ctx.fillStyle = '#FF0000'; // kolor
+        ctx.fillRect(0,0,100,100); //prostokat wypelniony o wymiarzach 100X100, 0(x),0(y) - pozycja poczatku rysowania 
+        ctx.fillStyle = '#00FF00';
+        ctx.fillRect(100,0,100,100);
+        ctx.strokeStyle='blue'; //kolor
+        ctx.strokeRect(200,0,100,100)//pusty prostokat
+
+        //rysowanie linii
+        ctx.beginPath();
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = 'blue';
+        ctx.moveTo(100, 300);//
+        ctx.lineTo(200, 400);//pierwsza linia
+        ctx.lineTo(600,300);//druga linia
+        ctx.fill();
+        ctx.stroke();
+
+        //rysowanie kola
+        ctx.beginPath();
+        //ctx.arc(x, y, promien, katpoczatkowy, kat koncowy, true)
+        ctx.arc(200, 200, 30, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //drugie kolo
+        ctx.beginPath();
+        ctx.arc(400, 400, 38, 0, (Math.PI / 180)*90, true);
+        ctx.stroke();
+        ctx.fill();
+-->
+    <style>
+        body{
+            height: 100vh;
+        }
+        canvas{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid orangered
+        }
+    </style>
+
+</head>
+<body>
+    <canvas width="800" height="500"></canvas>
+
+    <script>
+        const canvas = document.querySelector('canvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'orange'; // kolor
+        ctx.fillRect(150,250,500,250); //prostokat wypelniony o wymiarzach 100X100, 0(x),0(y) - pozycja poczatku rysowania 
+        ctx.fillStyle = '#0000FF';
+        ctx.fillRect(200,300,70,70);
+        ctx.fillRect(525,300,70,70);
+        ctx.fillStyle = 'brown' ;
+        ctx.fillRect(370,350,60,250);
+        ctx.fillStyle ='black';
+        ctx.beginPath();
+        ctx.lineWidth = 1;
+        ctx.moveTo(650, 250);
+        ctx.lineTo(380, 10);
+        ctx.lineTo(150, 250);
+        ctx.fill();
+        ctx.fillStyle = 'black';
+        ctx.stroke();
+        ctx.fillStyle = 'black';
+        ctx.fillRect(240,80,40,100);
+        ctx.fillRect(500,80,40,100);
+        ctx.fillRect(200,300,70,3);
+        ctx.fillRect(525,300,70,3);
+        ctx.fillStyle= 'grey';
+        ctx.fillRect(200,300,70,10);
+        ctx.fillRect(525, 300, 70, 10);
+        
+
+       
+    </script>
+
+</body>
+</html>
+
+
