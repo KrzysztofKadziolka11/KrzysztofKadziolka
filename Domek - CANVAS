@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+
+        }
+        canvas{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border: 4px solid orangered;
+        }
+    </style>
+
+</head>
+<body>
+    <canvas width="2000" height="1500"></canvas>
+    <script>
+
+        const canvas = document.querySelector('canvas');
+        const ctx = canvas.getContext('2d');
+
+        //ściana domu
+        ctx.fillStyle='orange';
+        ctx.fillRect(700,1000,1000,800);  
+        //ściana garażu
+        ctx.fillStyle='yellow';
+        ctx.fillRect(200,1100,500,400); 
+        //dach domu
+        ctx.fillStyle='red';
+        ctx.beginPath();
+        ctx.strokeStyle = 'red';
+        ctx.moveTo(1190,600);
+        ctx.lineTo(1700, 1000);
+        ctx.lineTo(700,1000);
+        ctx.fill();
+        ctx.stroke();
+        //dach garażu
+        ctx.fillStyle='red';
+        ctx.beginPath();
+        ctx.strokeStyle = 'red';
+        ctx.moveTo(450,900);
+        ctx.lineTo(700, 1100);
+        ctx.lineTo(200,1100);
+        ctx.fill();
+        ctx.stroke();
+        //słońce
+        ctx.fillStyle='yellow';
+        ctx.strokeStyle = 'yellow';
+        ctx.beginPath();
+        ctx.arc(350, 350, 300, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //drzwi garaż
+        ctx.fillStyle='grey';
+        ctx.fillRect(300,1200,300,300); 
+        //komin dom
+        ctx.fillStyle='red';
+        ctx.fillRect(1450,700,100,200); 
+        //drzwi dom
+        ctx.fillStyle='yellow';
+        ctx.fillRect(1075,1200,250,400); 
+        //okno dom (1)
+        ctx.fillStyle='blue';
+        ctx.fillRect(800,1090,200,200); 
+        //okno dom (2)
+        ctx.fillStyle='blue';
+        ctx.fillRect(1400,1090,200,200);
+      
+        //choinka pierwsza 
+        //choinka (0)
+        ctx.fillStyle = 'brown';
+        ctx.fillRect(80, 1400, 50, 100);
+        ctx.fillStyle = 'green';
+        //choinka (1)
+        ctx.beginPath();
+        ctx.strokeStyle = 'green';
+        ctx.moveTo(100,1250);
+        ctx.lineTo(200, 1400);
+        ctx.lineTo(25,1400);
+        ctx.fill();
+        ctx.stroke();
+         //choinka (1)
+         ctx.beginPath();
+        ctx.strokeStyle = 'green';
+        ctx.moveTo(100,1150);
+        ctx.lineTo(200, 1330);
+        ctx.lineTo(25,1330);
+        ctx.fill();
+        ctx.stroke();
+        //choinka (1)
+        ctx.beginPath();
+        ctx.strokeStyle = 'green';
+        ctx.moveTo(100,1085);
+        ctx.lineTo(200, 1260);
+        ctx.lineTo(25,1260);
+        ctx.fill();
+        ctx.stroke();
+
+        //choinka druga
+        //choinka (0)
+        ctx.fillStyle = 'brown';
+        ctx.fillRect(1800, 1400, 50, 100);
+        ctx.fillStyle = 'green';
+         //choinka (1)
+         ctx.beginPath();
+        ctx.strokeStyle = 'green';
+        ctx.moveTo(1820,1250);
+        ctx.lineTo(1725, 1400);
+        ctx.lineTo(1925,1400);
+        ctx.fill();
+        ctx.stroke();
+         //choinka (2)
+         ctx.beginPath();
+        ctx.strokeStyle = 'green';
+        ctx.moveTo(1820,1150);
+        ctx.lineTo(1725, 1330);
+        ctx.lineTo(1925,1330);
+        ctx.fill();
+        ctx.stroke();
+        //choinka (3)
+        ctx.beginPath();
+        ctx.strokeStyle = 'green';
+        ctx.moveTo(1820,1050);
+        ctx.lineTo(1725, 1260);
+        ctx.lineTo(1925,1260);
+        ctx.fill();
+        ctx.stroke();
+        
+
+            //CHMURA 1
+        //chmura pierwsza (1)
+        ctx.fillStyle='#0088ff';
+        ctx.strokeStyle = '#0088ff';
+        ctx.beginPath();
+        ctx.arc(900, 200, 100, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //chmura pierwsza (2)
+        ctx.fillStyle='#0088ff';
+        ctx.strokeStyle = '#0088ff';
+        ctx.beginPath();
+        ctx.arc(1020, 200, 100, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //chmura pierwsza (3)
+        ctx.fillStyle='#0088ff';
+        ctx.strokeStyle = '#0088ff';
+        ctx.beginPath();
+        ctx.arc(1140, 200, 100, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+            //CHMURA 2
+        //chmura druga (1)
+        ctx.fillStyle='#0088ff';
+        ctx.strokeStyle = '#0088ff';
+        ctx.beginPath();
+        ctx.arc(800, 470, 70, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //chmura druga (2)
+        ctx.fillStyle='#0088ff';
+        ctx.strokeStyle = '#0088ff';
+        ctx.beginPath();
+        ctx.arc(910, 470, 70, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //chmura druga (3)
+        ctx.fillStyle='#0088ff';
+        ctx.strokeStyle = '#0088ff';
+        ctx.beginPath();
+        ctx.arc(1020, 470, 70, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+            //CHMURA 3
+         //chmura trzecia (1)
+         ctx.fillStyle='#0088ff';
+        ctx.strokeStyle = '#0088ff';
+        ctx.beginPath();
+        ctx.arc(1500, 300, 120, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //chmura trzecia (2)
+        ctx.fillStyle='#0088ff';
+        ctx.strokeStyle = '#0088ff';
+        ctx.beginPath();
+        ctx.arc(1620, 300, 120, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //chmura trzecia (3)
+        ctx.fillStyle='#0088ff';
+        ctx.strokeStyle = '#0088ff';
+        ctx.beginPath();
+        ctx.arc(1740, 300, 120, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //dym (1)
+        ctx.fillStyle='#808080';
+        ctx.strokeStyle = '#808080';
+        ctx.beginPath();
+        ctx.arc(1910, 430, 28, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+        //dym (1)
+        ctx.fillStyle='#808080';
+        ctx.strokeStyle = '#808080';
+        ctx.beginPath();
+        ctx.arc(1780, 480, 40, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+         //dym (2)
+         ctx.fillStyle='#808080';
+        ctx.strokeStyle = '#808080';
+        ctx.beginPath();
+        ctx.arc(1650, 530, 50, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+         //dym (3)
+         ctx.fillStyle='#808080';
+        ctx.strokeStyle = '#808080';
+        ctx.beginPath();
+        ctx.arc(1500, 600, 55, 0, (Math.PI / 180)*360, true);
+        ctx.stroke();
+        ctx.fill();
+
+    </script>
+
+    
+
+</body>
+</html>
