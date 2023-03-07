@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!--PIERWSZY-->
+    <p>
+        <?php 
+        echo "Mój pierwszy plik";
+        ?>    
+    </p>
+     <!--IMIE + NAZWISKO-->
+    <p>
+        <?php
+        echo "krzys kadziolka";
+        ?>
+    </p>
+     <!--ADRES ZAMIESZKANIA-->
+    <p>
+        <?php
+        echo "adres_zamieszkania";
+        ?>
+    </p>
+    <!--SYMBOL APOSTROFU-->
+    <p>
+        <?php
+        echo 'To jest symbol apostrofu\' użyty w kodzie PHP';
+        ?>
+    </p>
+      <!--$Z = PRZYPISANIE-->
+    <p>
+        <?php
+        $z = 'To jest tekst';
+        echo $z;
+        ?>
+    </p>
+
+        <!--.-----------------------------------BLOK INSTRUKCJI W "PHP"----------------------------------------.-->
+
+            <!--.-----------------------------------SKRÓCONY----------------------------------------.-->
+            <p>
+                <?
+                echo "Mój pierwszy plik";
+                ?>
+            </p>
+            <!--.-----------------------------------STANDARDOWY----------------------------------------.-->
+            <p>
+                <?php
+                echo "Mój pierwszy plik";
+                ?>
+            </p>
+            <!--.-----------------------------------ASP----------------------------------------.-->
+            <p>
+                <%
+                echo "Mój pierwszy plik";
+                %>
+            </p>
+             <!--.-----------------------------------SKRYPTOWY----------------------------------------.-->
+            <p>
+                <script language="php">
+                echo "Mój pierwszy plik";
+                </script>
+            </p>
+
+        <!-------------------------------------ECHO I PRINT------------------------------------------------>
+            <?php
+            echo ("Mój pierwszy skrypt PHP");
+            ?>
+
+            <?php
+            print ("Mój pierwszy skrypt PHP");
+            ?>
+
+
+</body>
+</html>
