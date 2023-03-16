@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <!-- <h3>1. Znajdź pole trójkąta, w którym długości trzech jego boków wynoszą 5, 6, 7.</h3>
+    <h5><b>Wynik</b> 5,6,7 -> 14.696938456699069</h5>
+    -->
+
+    
+    <!-- <script>
+        const a = 5;
+        const b = 6;
+        const c = 7;
+
+        const p = (a+b+c)/2
+
+        z = Math.sqrt(p*(p-a)*(p-b)*(p-c))
+        console.log(z)
+
+    </script> -->
+ 
+    <br><br><br><br>
+
+<!-- <h3> 2. Napisz program w JavaScript, który obliczy różnicę między podaną liczbą a liczbą 13, jeśli liczba jest większa niż 13, zwróci podwójną różnicę (bezwzględną).</h3>
+<h5>
+    Wartości poprawne
+    Dla liczby: 32 -> zwróci 38
+    Dla liczby: 11 -> zwróci 2   
+</h5>
+-->
+
+<!-- <script>
+    const x = 13;
+    const d = prompt("Podaj liczbe");
+
+    if(d>x){
+        console.log((d-x)*2);
+    }
+    else{
+        console.log*(x-d)
+    } 
+</script>  -->
+    <br><br><br><br>
+
+<!-- <h3>Napisz program w JavaScript, który obliczy sumę dwóch podanych liczb całkowitych. Jeśli dwie wartości są takie same, funkcja zwraca potrójną ich sumę.</h3>
+<h5>  
+    Wartości poprawne:
+    Dla liczb: 10, 20 -> zwróci 30
+    Dla liczb: 10, 10 -> zwróci 60
+</h5>     -->
+    
+<!-- <script>
+    const a = Number(prompt("Podaj liczbe a: "));
+    const b = Number(prompt("Podaj liczbe b: "));
+
+    const suma =(a+b)
+
+    if (a===b){
+        console.log((a+b)*3)
+    }
+    else{
+        console.log(suma)
+    }
+
+</script> -->
+
+  <br><br><br><br>
+
+<!--<h3> 4. Napisz program w języku JavaScript, obliczający mnożenie i dzielenie dwóch liczb. (Dane powinny być podane przez użytkownika). (Zabezpiecz program przed wartością zerową.) </h3>-->
+
+<!-- 
+<script>
+    const a = Number(prompt("Podaj liczbe a: "));
+    const b = Number(prompt("Podaj liczbe b: "));
+
+    const mnozenie = (a*b);
+    const dzielenie = (a/b);
+
+    if(a>0 && b>0){
+        console.log(mnozenie)
+        console.log(dzielenie)
+    }
+    else{
+        console.log("Podaj liczbe wieksza od 0")
+    }
+</script> -->
+
+<br><br><br><br>
+
+
+<!-- 
+<h3> 5. Napisz program w JavaScript, który sprawdzi dwie podane liczby i zwróci wartość true, jeśli jedna z nich to 50 lub ich suma wynosi 50.</h3>
+<h5>
+    // Wartości poprawne:
+    // Dla liczb: 50, 50 -> true
+    // Dla liczb: 20, 50 -> true
+    // Dla liczb: 20, 20 -> false
+    // Dla liczb: 20, 30 -> true
+</h5>  -->
+ 
+<!-- <script>
+    const a = Number(prompt("Podaj liczbe a: "));
+    const b = Number(prompt("Podaj liczbe b: "));
+
+    if(a==50 || b==50 || a+b==50){
+        console.log(true)
+    }
+    else{
+        console.log(false)
+    }
+</script> -->
+ 
+<br><br><br><br>
+
+
+<!-- <h3>6. Napisz program w JavaScript, który sprawdza na podstawie dwóch podanych liczb całkowitych, czy jedna jest dodatnia, a druga ujemna.</h3>
+<h5>   
+    Wartości poprawne:
+    Dla liczb: 2, 2 -> false
+    Dla liczb: -2, 2 -> true
+    Dla liczb: 2, -2 -> true
+    Dla liczb: -2, -2 -> false
+</h5> -->
+
+ <!-- <script>
+    const a = Number(prompt("Podaj liczbe calkowita a: "));
+    const b = Number(prompt("Podaj liczbe calkowita b: "));
+    if(a > 0  && b < 0|| a < 0 && b > 0){
+    console.log("true");
+    }else{console.log("false");}
+</script> -->
+
+
+<br><br><br><br>
+
+<!-- <h3> 7. Napisz program w JavaScript, sprawdzający trzy podane liczby. Jeżeli dwie z podanych liczb są takie same, zwróć trzecią. Jeżeli wszystkie są różne, zwróć komunikat "brak dwóch równych liczb";</h3>
+<h5>
+    Wartości poprawne:
+ Dla liczb: 1,2,2 -> 1
+ Dla liczb: 1,1,2 -> 2
+ Dla liczb: 1,2,3 -> komunikat
+</h5> -->
+ 
+ <!-- <script>
+    const a = Number(prompt("Podaj liczbe a:"));
+    const b = Number(prompt("Podaj liczbe b:"));
+    const c = Number(prompt("Podaj liczbe c:"));
+    if(a == b){
+    console.log(c);}
+    else if(a == c){
+    console.log(b);}
+    else if (c == b){
+    console.log(a);}
+    else{console.log("nie ma takich samych liczb")}
+ </script> -->
+
+
+
+<!-- <h3>8. Napisz program w JavaScript, który znajdzie największą z trzech podanych liczb całkowitych.</h3>
+<h5>
+    // Poprawne wyniki:
+// dla liczb: 1,0,1 -> zwróci 1
+// dla liczb 0, -10, -20 -> zwróci 0
+// dla liczb 1000, 510, 440 -> zwróci 1000
+</h5> -->
+
+<!-- <script>
+    const a = Number(prompt("Podaj liczbe a: "));
+    const b = Number(prompt("Podaj liczbe b: "));
+    const c = Number(prompt("Podaj liczbe c: "));
+    
+    if(a>b && a>c){console.log(a)}
+    else if(b>c && b>a){console.log(b)}
+    else if(c>a && c>b){console.log(c)}
+</script> -->
+ 
+<br><br><br><br>
+
+</body>
+</html>
+
+
+
+ 
