@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="skrypt.js">
+        </script>
+    </head>
+    <body>
+        <p>a= <input type="text" id="a" size="4"/></p>
+        <input type="submit" value="OBLICZ" onclick="oblicz()" />
+        <div id="wynik"></div>
+    </body>
+</html>
+
+
+
+
+
+//Drugi plik Js
+
+function oblicz()
+            {
+                var a=document.getElementById("a").value;
+                var P=a*a;
+                document.getElementById("wynik").innerHTML="Pole kwadratu o boku a= "+P;
+            }
