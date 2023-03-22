@@ -1,0 +1,13 @@
+public class classzd8 {
+        public static void main(String[] args) {
+
+            System.out.print("XXXXXXXX");
+            System.out.print("XXXXXXXX");
+            System.out.print("XXXXXXXX");
+            System.out.print("XXXXXXXX");
+            System.out.print("XXXXXXXX");
+            System.out.print("XXXXXXXX");
+            System.out.print("XXXXXXXX");
+
+        }
+    }
