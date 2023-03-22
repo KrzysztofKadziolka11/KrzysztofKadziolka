@@ -1,0 +1,13 @@
+public class classzd5 {
+        public static void main(String[] args) {
+            boolean sun = true;
+
+            if(sun){
+                System.out.print("Piękne zwierzeta");
+            }
+            else{
+                System.out.print("Brzydkie zwierzęta");
+            }
+        }
+    }
+
