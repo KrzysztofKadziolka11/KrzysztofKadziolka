@@ -1,0 +1,17 @@
+public class classzd3 {
+
+    public static void main(String[] args) {
+
+        System.out.print("Imie i nazwisko : ");
+        System.out.print("\"Krzysztof \"");
+        System.out.print("\"Kadziolka \"");
+        System.out.print("Ulica i numer domu : ");
+        System.out.print("\"ul.Kwiatowa\"");
+        System.out.print("\"24/12 C1\"");
+        System.out.print("Nazwa miasta i kod pocztowy : ");
+        System.out.print("\"Wrocław\"");
+        System.out.print("\"54-321\"");
+        System.out.print("Numer telefonu : ");
+        System.out.print("\"+48 733 380 811\"");
+    }
+}
