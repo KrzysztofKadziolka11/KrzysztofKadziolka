@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 style="text-align: center;"><b>Witaj na naswzej stronie !</b></h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col1-12 col-md-4 border">
+                <p style="text-align: center;"><b>O nas</b></p>
+                <p>Firma istnieje na rynku od 20lat</p>
+            </div>
+
+            <div class="col-12 col-md-4 border">
+                <p style="text-align: center;"><b>Oferta</b></p>
+                <p>Zajmujemy się programowaniem sterowników PLC</p>
+            </div>
+
+            <div class="col-12 col-md-4 border">
+                <p style="text-align: center;">Kontakt</p>
+                <p>tel. 560234456</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+</body>
+</html>
