@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    html{
+        background-color: coral;
+    }
+    body{
+        margin: auto;
+    }
+    .clear{
+        clear: both;
+    }
+    #pasek_tlo{
+        background: #5A5050;
+    }
+    #pasek{
+        display: block;
+        padding: 5px;
+        margin: 0;
+        color: #A2D4AB;
+        font-weight: 700;
+        font-size: 25px;
+        max-width: 1200px;
+        margin:auto;
+    }
+    #powitanie{
+        float: left;
+    }
+    #status-gry{
+        float: right;
+    }
+    #gra{
+        max-width: 1200px;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .klocek{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        height: 150px;
+        width: 150px;
+    }
+    .klocek .przeslona{
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background: #547A82;
+        cursor: pointer;
+    }
+    .klocek img{
+        height: 100%;
+        max-width: 100%;
+    }
+    #informacja-znaleziono{
+        position: absolute;
+        width: 200px;
+        right: 0;
+        z-index: 2;
+        background: #5A5050;
+        text-align: center;
+        padding: 5px;
+        color: #A2D4AB;
+        font-size: 20px;
+        padding: 20px;
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div id="pasek_tlo">
+        <div id="pasek">
+            <div id="powitanie">Sprobuj znalezc wszystkie powstacie</div>
+            <div id="status-gry">Znaleziono: 0 , Próby: 0</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="gra">
+        <div class="klocek" mem-number="1"><img src="images/obj1.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="2"><img src="images/obj2.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="5"><img src="images/obj5.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="4"><img src="images/obj4.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="5"><img src="images/obj5.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="3"><img src="images/obj3.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="3"><img src="images/obj3.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="7"><img src="images/obj7.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="2"><img src="images/obj2.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="1"><img src="images/obj1.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="6"><img src="images/obj6.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="7"><img src="images/obj7.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="4"><img src="images/obj4.png"/><div class="przeslona"></div></div>
+        <div class="klocek" mem-number="6"><img src="images/obj6.png"/><div class="przeslona"></div></div>
+        <div id="informacja-znaleziono">Znaleziono pare :) </div>
+    </div>
+
+    
+    <script src="html://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function (){
+        var wybranyKlocek = 0;
+        var liczbaZnalezionych = 0;
+        var liczbaPrób = 0;
+        
+        function aktualizujStatus(){
+            $('#status-gry').html('Znaleziono: ' + liczbaZnalezionych + ', Próby: ' + liczbaProb);
+        }
+        aktualizujStatus();
+
+        $('.przeslona').click(function () {
+        $(this).hide();
+        var kliknietyKlocek = $(this).parent().attr('mem-number');
+        console.log('Kliknieto klocek o numerze:' + kliknietyKlocek);
+
+        if (wybranyKlocek == 0) {
+            wybranyKlocek = kliknietyKlocek;
+        }
+        else if(wybranyKlocek==kliknietyKlocek){
+            liczbaZnalezionych++;
+            liczbaPrób++;
+            
+            $('#informacja-znaleziono').slideDown();
+            setTimeout(function() {
+            if (liczbaZnalezionych ==7){
+                alert('Udalo Ci sie znalezc pary, gratuluje!');
+            }
+            }, 2000);
+            wybranyKlocek = 0;
+        }
+        else{
+            liczbaPrób++;
+            var doZasloniecia1 = wybranyKlocek;
+            var doZasloniecia2 = kliknietyKlocek;
+            wybranyKlocek = 0;
+            setTimeout(function() {
+            $('[mem-number=' + doZasloniecia1 + '] .przeslona').fadeIn('slow');
+            $('[mem-number=' + doZasloniecia2 + '] .przeslona').fadeIn('slow');
+            }, 1000);
+        }
+        aktualizujStatus();
+
+        });
+        });
+    </script>
+</body>
+</html>
