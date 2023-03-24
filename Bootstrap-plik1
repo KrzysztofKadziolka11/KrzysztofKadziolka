@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Webpack</title>
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Hello, Bootstrap and Webpack!</h1>
+      <button class="btn btn-primary">Primary button</button>
+    </div>
+    <script src="./main.js"></script>
+
+
+    <div class="container-fluid">
+        <p>
+            1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima odit mollitia similique perspiciatis quasi suscipit culpa quae quia, laborum cupiditate possimus! Soluta, voluptatibus accusantium laudantium quas molestiae architecto illum veritatis?
+        </p>
+    </div>
+    <div class="container">
+        <p>
+            2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestias nam quaerat placeat, quia et, consectetur officiis sit nesciunt perspiciatis deserunt saepe quis expedita quibusdam amet quos, minus voluptates commodi.
+        </p>
+    </div>
+
+    <!--kolory-->
+    <p class="text-primary bg-success">Kolor podstawowy</p>
+    <p class="text-primary bg-success">Kolor drugi</p>
+    <p class="text-primary bg-success">Kolor sukcesu</p>
+    <p class="text-primary bg-success">Kolor zagrożenia</p>
+    <p class="text-primary bg-success">Kolor ostrzeżenia</p>
+    <p class="text-primary bg-success">Kolor info</p>
+    <p class="text-primary bg-success">Kolor jasny</p>
+    <p class="text-primary bg-success">Kolor ciemny</p>
+    <p class="text-primary bg-success">Kolor biały</p>
+
+    <div class="bg-success">
+        <p class="text-white">kolor biały</p>
+    </div>
+    <button class="btn-primary">Kliknij mnie</button>
+    <table>
+        <tr class="table-warning">
+            <td>id</td>
+            <td>1</td>
+        </tr>
+        <tr class="bg-warning">
+            <td>id</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <div class="border border-warning bg-dark text-white">
+        div
+    </div>
+    
+    <ul>
+        <li class="list-group-item list-group-item-succes">1</li>
+        <li class="list-group-item list-group-item-danger">2</li>
+        <li class="list-group-item list-group-item-dark">3</li>
+    </ul>
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+
+  </body>
+</html>
