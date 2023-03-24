@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Moj pierwszy blog wBootstrapie</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <h3>Tytuł wpisu 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ut totam error maiores, temporibus illum quia veniam nemo molestias ea! Dolorem optio aliquam voluptates quis iste alias exercitationem excepturi eum.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h3>Tytuł wpisu 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ut totam error maiores, temporibus illum quia veniam nemo molestias ea! Dolorem optio aliquam voluptates quis iste alias exercitationem excepturi eum.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h3>Tytuł wpisu 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ut totam error maiores, temporibus illum quia veniam nemo molestias ea! Dolorem optio aliquam voluptates quis iste alias exercitationem excepturi eum.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h3>Tytuł wpisu 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ut totam error maiores, temporibus illum quia veniam nemo molestias ea! Dolorem optio aliquam voluptates quis iste alias exercitationem excepturi eum.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h3>Tytuł wpisu 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ut totam error maiores, temporibus illum quia veniam nemo molestias ea! Dolorem optio aliquam voluptates quis iste alias exercitationem excepturi eum.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h3>Tytuł wpisu 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ut totam error maiores, temporibus illum quia veniam nemo molestias ea! Dolorem optio aliquam voluptates quis iste alias exercitationem excepturi eum.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+</body>
+</html>
